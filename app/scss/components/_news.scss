@@ -1,0 +1,265 @@
+.news {
+  @include adaptive-value('padding-top', 80, 40, 1);
+  @include adaptive-value('padding-bottom', 80, 40, 1);
+
+  &__title {
+    text-align: center;
+    @include fz40();
+    @include adaptive-value('margin-bottom', 60, 40, 1);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 39px;
+    @include adaptive-value('margin-bottom', 60, 40, 1);
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 20px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 100%;
+    height: 100%;
+
+    &--big {
+      grid-column: 1/3;
+
+      @include breakpointsMaxW($bp-991) {
+        height: calc(245px + (450 - 245) * ((100vw - 375px) / (991 - 375)));
+      }
+
+      .news-card {
+        max-width: 100%;
+        position: relative;
+        color: var(--color-white);
+        height: 100%;
+
+        &__top {
+          width: 100%;
+          height: 100%;
+          color: var(--color-white);
+        }
+
+        &__title {
+          color: var(--color-white);
+          @include adaptive-value('font-size', 23, 17, 1);
+        }
+
+        &__details {
+          color: rgba(255, 255, 255, 0.7);
+
+          @include breakpointsMaxW($bp-768) {
+            padding-bottom: 0;
+          }
+        }
+
+        &__date {
+          position: relative;
+          background-color: transparent;
+          width: auto;
+          height: auto;
+          padding-left: 20px;
+
+          @include breakpointsMaxW($bp-768) {
+            padding-left: 17px;
+
+            &::after {
+              top: 30%;
+              width: 10px;
+              height: 10px;
+            }
+          }
+
+          &::after {
+            left: 0;
+          }
+        }
+
+        &__body {
+          position: absolute;
+          max-width: 335px;
+          width: calc(100% - 40px);
+          bottom: 40px;
+          left: 40px;
+          color: var(--color-white);
+
+          @include breakpointsMaxW($bp-768) {
+            bottom: 17px;
+            left: 20px;
+          }
+        }
+
+        &__details {
+          border-bottom: none;
+          @include breakpointsMaxW($bp-360) {
+            span {
+              display: inline;
+            }
+          }
+        }
+
+        &__title {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.news-card {
+  max-width: 290px;
+  width: 100%;
+
+  &__details {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    color: #9f9f9f;
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 14px;
+    padding-top: 15px;
+    gap: 20px;
+    font-size: 13px;
+    line-height: 1;
+
+    @include adaptive-value('font-size', 13, 11, 1);
+  }
+
+  &__top {
+    display: block;
+    width: 100%;
+    height: 210px;
+    position: relative;
+
+    @include adaptive-value('height', 210, 120, 1);
+
+    img {
+      @include img(cover);
+    }
+  }
+
+  &__date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 37px;
+    width: 132px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+
+    @include breakpointsMaxW($bp-768) {
+      height: 21px;
+      width: 75px;
+      font-size: 10px;
+    }
+
+    &::after {
+      @include elDef();
+      width: 13px;
+      height: 13px;
+      top: 45%;
+      transform: translateY(-50%);
+      left: 18px;
+      @include maskImage(url('../images/icons/calendar.svg'), contain);
+      background-color: var(--color-white);
+      @include breakpointsMaxW($bp-768) {
+        left: 5px;
+        width: 7px;
+        height: 7px;
+      }
+    }
+  }
+
+  &__author {
+    padding-left: 21px;
+    position: relative;
+
+    @include breakpointsMaxW($bp-360) {
+      span {
+        display: block;
+        line-height: 1.4;
+      }
+    }
+
+    &::after {
+      @include elDef();
+      left: 0;
+      top: 40%;
+      transform: translateY(-50%);
+      width: 13px;
+      height: 13px;
+      @include maskImage(url('../images/icons/user.svg'), contain);
+      background-color: #bbbbbb;
+    }
+  }
+
+  &__views {
+    padding-left: 21px;
+    position: relative;
+
+    &::after {
+      @include elDef();
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 13px;
+      height: 10px;
+      @include maskImage(url('../images/icons/eye.svg'), contain);
+      background-color: #bbbbbb;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    color: #323131;
+    margin-bottom: 5px;
+    max-width: 230px;
+
+    @include adaptive-value('font-size', 19, 14, 1);
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #6c6c6c;
+    margin-bottom: 10px;
+  }
+
+  &__btn {
+    position: relative;
+    padding-right: 10px;
+    color: var(--color-accent);
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 500;
+
+    &::after {
+      @include elDef();
+      right: 0;
+      top: 35%;
+      transform: translateY(-50%);
+      width: 7px;
+      height: 7px;
+      @include maskImage(url('../images/icons/triangle.svg'), contain);
+      background-color: var(--color-accent);
+    }
+  }
+}

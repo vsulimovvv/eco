@@ -1,0 +1,64 @@
+.save {
+  @include background(cover);
+  @include adaptive-value('padding-top', 80, 50, 1);
+  @include adaptive-value('padding-bottom', 80, 50, 1);
+
+  &__title {
+    @include fz40();
+    text-align: center;
+    @include adaptive-value('margin-bottom', 110, 70, 1);
+
+    span {
+      color: var(--color-accent);
+    }
+  }
+
+  &__formula {
+    @include fz40();
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #323131;
+
+    span {
+      font-weight: 800;
+      color: var(--color-accent);
+      display: block;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    @include breakpointsMaxW($bp-991) {
+      padding-bottom: calc(
+        200px + (300 - 200) * ((100vw - 375px) / (991 - 375))
+      );
+    }
+  }
+
+  &__preview {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 365px;
+    height: 245px;
+    @include background(contain);
+
+    @include breakpointsMaxW($bp-container) {
+      width: calc(280px + (365 - 280) * ((100vw - 991px) / (1270 - 991)));
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      width: calc(150px + (300 - 150) * ((100vw - 375px) / (991 - 375)));
+      height: calc(150px + (250 - 150) * ((100vw - 375px) / (991 - 375)));
+      top: initial;
+      bottom: 10px;
+    }
+
+    &--bush {
+      left: initial;
+      right: 0;
+    }
+  }
+}

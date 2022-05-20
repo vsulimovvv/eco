@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+
+    <title>Экосреда</title>
+  </head>
+
+  <body>
+    @include('./components/popups/_popups.html')
+
+    <h1 class="visually-hidden">Главная</h1>
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <div class="breadcrumbs breadcrumbs--absolute">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Услуги</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active">
+           Индивидуальная разработка МАФ
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <main class="main">
+        @include('./components/_hero-service.html')
+        @include('./components/_individual.html')
+        @include('./components/_our-works-2.html')
+        @include('./components/_advantages.html')
+        @include('./components/_news-products-2.html')
+        @include('./components/_formula.html')
+        @include('./components/_why.html')
+        @include('./components/_request-3.html')
+      </main>
+      @include('./components/_footer-2.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

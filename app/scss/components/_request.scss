@@ -1,0 +1,97 @@
+.request {
+  background-color: var(--color-accent);
+  @include adaptive-value('padding-top', 90, 50, 1);
+  @include adaptive-value('padding-bottom', 90, 50, 1);
+  color: var(--color-white);
+  @include background(cover);
+
+  &__top {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    @include fz40();
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.3;
+    color: #f9f9f9;
+    max-width: 650px;
+    margin: 0 auto;
+    @include adaptive-value('font-size', 20, 15, 1);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    align-items: center;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__preview {
+    width: 100%;
+    height: 480px;
+    @include background(contain);
+    @include adaptive-value('height', 480, 230, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      order: 1;
+    }
+  }
+
+  &__form {
+    width: 100%;
+  }
+
+  &--question {
+    padding-bottom: 0;
+
+    .form-submit {
+      &__group {
+        margin-bottom: 20px;
+      }
+    }
+
+    .request {
+      &__wrapper {
+        gap: 40px;
+      }
+
+      &__title {
+        margin-bottom: 5px;
+      }
+
+      &__preview {
+        height: 620px;
+
+        @include breakpointsMaxW($bp-container) {
+          height: 450px;
+
+          height: calc(250px + (450 - 250) * ((100vw - 375px) / (991 - 375)));
+        }
+      }
+    }
+  }
+
+  &--no-top {
+    margin-top: -50px;
+    z-index: 1;
+    position: relative;
+
+    &::after {
+      @include elDef();
+      width: 100%;
+      height: 50px;
+      background-color: var(--color-accent);
+      top: 0;
+      left: 0;
+    }
+  }
+}

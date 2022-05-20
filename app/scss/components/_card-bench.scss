@@ -1,0 +1,352 @@
+.bench-card {
+  max-width: 305px;
+  width: 100%;
+  background-color: var(--color-white);
+  transition: 300ms ease;
+  height: 100%;
+
+  &:hover {
+    box-shadow: 0px 12px 32px 0px rgba(6, 6, 6, 0.23);
+
+    .bench-card {
+      &__bottom {
+        transform: scaleY(1);
+        box-shadow: 0px 12px 32px 0px rgba(6, 6, 6, 0.23);
+      }
+
+      &__info {
+        border-color: #e3e3e3;
+      }
+    }
+  }
+
+  &__top {
+    background-color: #f4f4f4;
+    padding: 40px;
+    padding-top: 70px;
+    height: 290px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @include adaptive-value('height', 290, 150, 1);
+    @include adaptive-value('padding', 40, 20, 1);
+    @include adaptive-value('padding-top', 70, 50, 1);
+
+    img {
+      @include img(contain);
+    }
+  }
+
+  &__stock {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+
+    @include breakpointsMaxW($bp-768) {
+      top: 12px;
+      left: 10px;
+    }
+  }
+
+  &__body {
+    position: relative;
+    padding: 20px;
+    @include adaptive-value('padding', 20, 10, 1);
+  }
+
+  &__info {
+    padding: 20px 0;
+    border-bottom: 1px solid transparent;
+    @include adaptive-value('padding-top', 20, 10, 1);
+    @include adaptive-value('padding-bottom', 20, 10, 1);
+  }
+
+  &__title {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 400;
+    color: #6e6e6e;
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    font-size: 19px;
+    line-height: 1;
+    font-weight: 600;
+    color: #323131;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px 0;
+    line-height: 1;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 15px;
+    font-weight: 400;
+
+    @include adaptive-value('font-size', 15, 12, 1);
+  }
+
+  &__left {
+    color: #8d8b8b;
+  }
+
+  &__right {
+    color: #323131;
+  }
+
+  &__bottom {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    background-color: var(--color-white);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 600ms ease;
+    @include adaptive-value('padding', 20, 10, 1);
+  }
+
+  &__right {
+    text-align: right;
+  }
+
+  &__list {
+    margin-bottom: 20px;
+  }
+
+  &__btns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include adaptive-value('gap', 10, 5, 1);
+  }
+
+  .counter {
+    margin-bottom: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5px;
+      @include breakpointsMaxW($bp-768) {
+        width: 100%;
+      }
+    }
+
+    &__btn {
+      background-color: #e8e8e8;
+      border-radius: 5px;
+      width: 27px;
+      @include breakpointsMaxW($bp-768) {
+        width: 100%;
+      }
+    }
+
+    &__input {
+      width: 50px;
+      height: 30px;
+      @include breakpointsMaxW($bp-768) {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      @include breakpointsMaxW($bp-768) {
+        display: none;
+      }
+    }
+  }
+
+  &__btn {
+    font-size: 13px;
+    line-height: 1;
+    color: #8d8b8b;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    @include adaptive-value('font-size', 13, 9, 1);
+
+    &-icon {
+      width: 49px;
+      height: 49px;
+      border-radius: 25px;
+      position: relative;
+      transition: 200ms ease;
+
+      @include breakpointsMaxW($bp-768) {
+        width: 35px;
+        height: 35px;
+      }
+
+      &::after {
+        @include elDef();
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        transition: 200ms ease;
+        @include breakpointsMaxW($bp-768) {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+
+    &--cart {
+      .bench-card__btn-icon {
+        border: 1px solid var(--color-accent);
+
+        &::after {
+          @include maskImage(url('../images/icons/cart.svg'), contain);
+          background-color: var(--color-accent);
+        }
+
+        &:hover {
+          background-color: var(--color-accent);
+
+          &::after {
+            background-color: var(--color-white);
+          }
+        }
+      }
+    }
+
+    &--favorite {
+      .bench-card__btn-icon {
+        border: 1px solid #8f8f8f;
+
+        &::after {
+          @include maskImage(url('../images/icons/heart.svg'), contain);
+          background-color: #8f8f8f;
+        }
+
+        &:hover {
+          background-color: #8f8f8f;
+
+          &::after {
+            background-color: var(--color-white);
+          }
+        }
+      }
+    }
+
+    &--buy {
+      .bench-card__btn-icon {
+        border: 1px solid #d19c9c;
+
+        &::after {
+          @include maskImage(url('../images/icons/click.svg'), contain);
+          background-color: #d19c9c;
+        }
+
+        &:hover {
+          background-color: #d19c9c;
+
+          &::after {
+            background-color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+
+  &--row {
+    &:hover {
+      .bench-card {
+        &__bottom {
+          box-shadow: none;
+        }
+      }
+    }
+
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #f4f4f4;
+
+    @include breakpointsMaxW($bp-991) {
+      justify-content: flex-start;
+    }
+
+    .bench-card {
+      &__top {
+        max-width: 305px;
+        height: 100%;
+
+        @include adaptive-value('max-width', 305, 150, 1);
+      }
+
+      &__list {
+        max-width: 250px;
+        width: 100%;
+        @include breakpointsMaxW($bp-768) {
+          margin-bottom: 0;
+        }
+      }
+
+      &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include breakpointsMaxW($bp-768) {
+          flex-direction: column;
+          align-items: flex-start;
+          padding-bottom: 10px;
+        }
+      }
+
+      &__bottom {
+        position: static;
+        box-shadow: 0;
+        transform: scaleY(1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+        flex-grow: 1;
+        gap: 50px;
+
+        @include breakpointsMaxW($bp-container) {
+          gap: 30px;
+        }
+
+        @include breakpointsMaxW($bp-768) {
+          padding: 0;
+
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+      }
+
+      &__doing {
+        width: 100%;
+      }
+
+      &__counter {
+        @include breakpointsMaxW($bp-768) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

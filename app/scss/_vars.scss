@@ -1,0 +1,22 @@
+// Color
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-dark: #323131;
+  --color-bg: #fffbf6;
+  --color-accent: #639933; // rgba(99, 153, 51, 1);
+  --gradient: linear-gradient(0deg, #639933 -25%, #82c04b 125%);
+  --color-yellow: #eeba2f;
+}
+
+// * breakpointsMaxW
+$bp-container: 1270px;
+$bp-991: 991.98px;
+$bp-768: 767.98px;
+$bp-576: 576px;
+$bp-360: 360.98px;
+
+// *=== Fonts
+$TTCommons: 'TT Commons';
+$Oswald: 'Oswald';

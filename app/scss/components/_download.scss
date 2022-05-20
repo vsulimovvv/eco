@@ -1,0 +1,29 @@
+.download {
+  @include background(cover);
+
+  @include breakpointsMaxW($bp-768) {
+  }
+
+  &__title {
+    @include fz40();
+    margin-bottom: 5px;
+  }
+
+  &__wrapper {
+    padding: 105px 0 120px;
+    @include adaptive-value('padding-top', 105, 60, 1);
+    @include adaptive-value('padding-bottom', 120, 60, 1);
+  }
+
+  &__text {
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+  }
+
+  &__btn {
+    @include adaptive-value('font-size', 22, 14, 1);
+    padding: 25px 45px;
+    @include breakpointsMaxW($bp-768) {
+      padding: 16px 30px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.socials {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__link {
+    display: block;
+    width: 37px;
+    height: 37px;
+    border-radius: 5px;
+    position: relative;
+
+    &::after {
+      @include elDef();
+      width: 16px;
+      height: 16px;
+      background-color: var(--color-white);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--vk {
+      background-color: #4c75a3;
+
+      &::after {
+        @include maskImage(url('../images/icons/vk.svg'), contain);
+      }
+    }
+
+    &--telegram {
+      background-color: #039be5;
+      &::after {
+        @include maskImage(url('../images/icons/telegram.svg'), contain);
+      }
+    }
+    &--whatsapp {
+      background-color: #4caf50;
+      &::after {
+        @include maskImage(url('../images/icons/whatsapp.svg'), contain);
+      }
+    }
+  }
+}

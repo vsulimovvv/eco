@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+  integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Экосреда</title>
+  </head>
+
+  <body>
+    <div class="popup popup--download">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Скачать каталог продукции</h2>
+      <div class="popup__text">
+        <p>
+          Заполните данные для открытия ссылки на скачивания каталога продукции
+        </p>
+      </div>
+
+      <form class="form-delivery">
+        <label class="form-delivery__group">
+          <input class="form-delivery__input" type="text" placeholder="Имя" />
+        </label>
+        <label class="form-delivery__group">
+          <input
+            class="form-delivery__input"
+            type="tel"
+            placeholder="+7 (999) 999 - 99 - 99"
+          />
+        </label>
+        <label class="form-delivery__group">
+          <input
+            class="form-delivery__input"
+            type="text"
+            placeholder="E-mail"
+          />
+        </label>
+
+        <label class="checkbox checkbox--dark">
+          <input class="checkbox__input" type="checkbox" />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Нажимая на кнопку отправить я соглашаюсь с
+            <a href="#"> политикой конфиденциальности</a>
+          </span>
+        </label>
+
+        <button class="form-delivery__btn btn btn--no-shadow" type="button">
+          Получить ссылку
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--link">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__text">
+        <a href="#">https://disk.yandex.ru/ссылка для скачивания</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <h1 class="visually-hidden">Главная</h1>
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!--* Mobile Menu -->
+
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Каталог продукции
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Скамейки</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Лавки</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Диваны парковые</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Урны</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Кашпо</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Приствольные решетки</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Водоотводные лотки и решетки</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Плитка тротуарная</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Доска </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Бордюры </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Канализационные люки</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Услуги</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Контакты</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Доставка и оплата</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Портфолио</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">О компании</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Блог</a>
+      </li>
+    </ul>
+
+    <!-- <div class="fix-nav">
+      <div class="container">
+        <div class="fix-nav__wrapper">
+          <ul class="fix-nav__list">
+            <li class="fix-nav__item">
+              <a class="fix-nav__link" href="#">
+                <div class="fix-nav__icon">
+                  <svg width="17" height="17">
+                    <use xlink:href="images/sprite.svg#grid"></use>
+                  </svg>
+                </div>
+                <span class="fix-nav__name">Каталог</span>
+              </a>
+            </li>
+            <li class="fix-nav__item">
+              <a class="fix-nav__link" href="#">
+                <div class="fix-nav__icon">
+                  <svg width="17" height="17">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </div>
+                <span class="fix-nav__name">Поиск</span>
+              </a>
+            </li>
+            <li class="fix-nav__item">
+              <a class="fix-nav__link" href="#">
+                <div class="fix-nav__icon">
+                  <svg width="17" height="17">
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </div>
+                <span class="fix-nav__name">Избранные</span>
+              </a>
+            </li>
+            <li class="fix-nav__item">
+              <a class="fix-nav__link" href="#">
+                <div class="fix-nav__icon">
+                  <svg width="17" height="17">
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg>
+                </div>
+                <span class="fix-nav__name">Корзина</span>
+              </a>
+            </li>
+            <li class="fix-nav__item">
+              <a class="fix-nav__link" href="#">
+                <div class="fix-nav__icon">
+                  <svg width="17" height="17">
+                    <use xlink:href="images/sprite.svg#user"></use>
+                  </svg>
+                </div>
+                <span class="fix-nav__name">Аккаунт</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+  <!--* Mobile Menu -->
+
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <a class="header__logo logo" href="#">
+          <img src="images/logo.png" alt="Логотип" />
+        </a>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+
+        <a class="data-box data-box--mail" href="mailto:info@ecosreda.org">
+          <span class="data-box__text">info@ecosreda.org</span>
+          <span class="data-box__accent">написать нам</span>
+        </a>
+
+        <a class="data-box data-box--location" href="#">
+          <address class="data-box__text">Москва, Название улицы 10</address>
+          <span class="data-box__accent">найти на карте</span>
+        </a>
+        <a class="data-box data-box--phone-icon" href="tel:+74957891012">
+          <span class="data-box__phone"> 8 (495) 789 10 12</span>
+          <span class="data-box__gray">по будням с 09:00 до 18:00</span>
+        </a>
+        <a class="data-box data-box--phone" href="tel:+78001234567">
+          <span class="data-box__phone">8 800 123 45 67</span>
+          <span class="data-box__accent">Бесплатный звонок по России</span>
+        </a>
+
+        <div class="header__tools">
+          <button class="header__btn btn btn--light" type="button">
+            Заказать звонок
+          </button>
+
+          <button
+            class="header__search"
+            type="button"
+            aria-label="Поиск"
+          ></button>
+          <button
+            class="header__cart"
+            type="button"
+            aria-label="Корзина"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a
+                class="menu__link menu__link--catalog menu__link--dropdown"
+                href="#"
+                >Каталог продукции</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Скамейки</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Лавки</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Диваны парковые</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Урны</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Кашпо</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Приствольные решетки</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Водоотводные лотки и решетки</a
+                    >
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Плитка тротуарная</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Доска</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Бордюры</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Канализационные люки</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О компании</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Блог</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#"></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--telegram" href="#"></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--whatsapp" href="#"></a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="btn btn--light" type="button">Заказать звонок</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <div class="breadcrumbs breadcrumbs--absolute">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Услуги</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active">
+           Индивидуальная разработка МАФ
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <main class="main">
+        <section
+  class="hero hero--service"
+  style="background-image: url('images/content/hero-service.jpg')"
+>
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__offer">
+        <h2 class="hero__title">Индивидуальная разработка МАФ</h2>
+        <div class="hero__text">
+          <p>
+            Разработаем изделие малой формы по индивидуальному проекту из
+            экологически безопасных строительных материалов
+          </p>
+        </div>
+
+        <button class="hero__btn btn">ЗАКАЗАТЬ РАЗРАБОТКУ</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="individual">
+  <div class="container">
+    <h2 class="individual__title">Индивидуальная разработка МАФ</h2>
+
+    <div class="individual__text">
+      <p>
+        При производстве изделий применяются только высококачественные материалы
+        — железобетон, металл, искусственный и натуральный камень, дерево,
+        полимеры. Это обеспечивает высокую устойчивость МАФ к воздействию
+        внешних факторов. Поэтому мы гарантируем продолжительный срок службы
+        наших малых архитектурных форм.
+      </p>
+
+      <p>
+        Разработка МАФ по индивидуальному проекту начинается со сбора исходных
+        данных объекта и изучения пожеланий клиента. Заказчик высылает нам на
+        электронную почту технические условия/ параметры, образцы изделий,
+        техническую документацию (если таковая имеется). По согласованию сторон
+        технические условия и (или) технические параметры могут передаваться в
+        устной форме. Затем разрабатывается эскиз. Далее заказчик выбирает
+        подходящий эскиз из нескольких предложенных вариантов. После утверждения
+        эскиза мы переходим к созданию 3D модели, которая позволяет получить
+        трехмерное изображение конструкции. Для этого используются
+        профессиональные компьютерные программы. Цель изготовления 3D модели —
+        показать клиенту идею проекта. В процессе проектирования выполняется
+        тщательная корректировка эскизов, после которой можно переходить к
+        проектным чертежам МАФ.
+      </p>
+    </div>
+  </div>
+</section>
+
+        <section class="our-works tabs">
+  <div class="container">
+    <h2 class="our-works__title">
+      Выполненные работы <br />
+      по индивидуальным проектам
+    </h2>
+
+    <div class="our-works__tabs">
+      <div class="our-works__top">
+        <ul class="our-works__top-list">
+          <li class="our-works__top-item">
+            <button class="our-works__top-btn tabs-btn tabs-btn--active">
+              Парки и скверы
+            </button>
+          </li>
+          <li class="our-works__top-item">
+            <button class="our-works__top-btn tabs-btn">
+              Дворы и детские площадки
+            </button>
+          </li>
+          <li class="our-works__top-item">
+            <button class="our-works__top-btn tabs-btn">
+              Набережные и пляжи
+            </button>
+          </li>
+          <li class="our-works__top-item">
+            <button class="our-works__top-btn tabs-btn">
+              Торговые центры и павильоны
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="our-works__contents">
+    <div class="our-works__content tabs-content active">
+      <div class="our-works__slider swiper">
+        <ul class="our-works__slides swiper-wrapper">
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/1.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/2.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/3.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/4.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/3.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/1.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/2.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <button
+          class="swiper-button-next"
+          type="button"
+          aria-label="Следующий"
+        ></button>
+        <button
+          class="swiper-button-prev"
+          type="button"
+          aria-label="Предыдущий"
+        ></button>
+      </div>
+    </div>
+    <div class="our-works__content tabs-content">
+      <div class="our-works__slider swiper">
+        <ul class="our-works__slides swiper-wrapper">
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/1.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/2.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/3.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/4.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/3.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/1.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/2.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <button
+          class="swiper-button-next"
+          type="button"
+          aria-label="Следующий"
+        ></button>
+        <button
+          class="swiper-button-prev"
+          type="button"
+          aria-label="Предыдущий"
+        ></button>
+      </div>
+    </div>
+    <div class="our-works__content tabs-content">
+      <div class="our-works__slider swiper">
+        <ul class="our-works__slides swiper-wrapper">
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/1.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/2.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/3.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/4.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/3.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/1.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/2.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <button
+          class="swiper-button-next"
+          type="button"
+          aria-label="Следующий"
+        ></button>
+        <button
+          class="swiper-button-prev"
+          type="button"
+          aria-label="Предыдущий"
+        ></button>
+      </div>
+    </div>
+    <div class="our-works__content tabs-content">
+      <div class="our-works__slider swiper">
+        <ul class="our-works__slides swiper-wrapper">
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/1.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/2.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/3.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/4.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/3.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/1.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <div class="work-card__top">
+                <img src="images/content/works/2.jpg" alt="Работа" />
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Название работы</h3>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <button
+          class="swiper-button-next"
+          type="button"
+          aria-label="Следующий"
+        ></button>
+        <button
+          class="swiper-button-prev"
+          type="button"
+          aria-label="Предыдущий"
+        ></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="our-works__bottom">
+    <a class="our-works__btn btn" href="#">ПЕРЕЙТИ В ПОРТФОЛИО</a>
+  </div>
+</section>
+
+        <section class="advantages">
+  <div class="container">
+    <h2 class="advantages__title">Преимущества <span>нашей продукции</span></h2>
+
+    <ul class="advantages__list">
+      <li class="advantages__item">
+        <div
+          class="advantages-card"
+          style="background-image: url('images/content/advantages/1.jpg')"
+        >
+          <h3 class="advantages-card__title">ДОЛГОВЕЧНОСТЬ</h3>
+          <div class="advantages-card__body">
+            <div class="advantages-card__text">
+              <p>
+                Полимерпесчаная смесь не ржавеет, не рассыпается, не впитывает
+                влагу, не гниет — гарантия от 2х лет
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="advantages__item">
+        <div
+          class="advantages-card"
+          style="background-image: url('images/content/advantages/2.jpg')"
+        >
+          <h3 class="advantages-card__title">КРЕПКИЙ КАК КАМЕНЬ</h3>
+          <div class="advantages-card__body">
+            <div class="advantages-card__text">
+              <p>
+                Полимерпесчаная смесь не ржавеет, не рассыпается, не впитывает
+                влагу, не гниет — гарантия от 2х лет
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="advantages__item">
+        <div
+          class="advantages-card"
+          style="background-image: url('images/content/advantages/3.jpg')"
+        >
+          <h3 class="advantages-card__title">АНТИВАНДАЛЬНОСТЬ</h3>
+
+          <div class="advantages-card__body">
+            <div class="advantages-card__text">
+              <p>
+                Полимерпесчаная смесь не ржавеет, не рассыпается, не впитывает
+                влагу, не гниет — гарантия от 2х лет
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="advantages__item">
+        <div
+          class="advantages-card"
+          style="background-image: url('images/content/advantages/4.jpg')"
+        >
+          <h3 class="advantages-card__title">100% ЭКОЛОГИЧНЫ</h3>
+          <div class="advantages-card__body">
+            <div class="advantages-card__text">
+              <p>
+                Полимерпесчаная смесь не ржавеет, не рассыпается, не впитывает
+                влагу, не гниет — гарантия от 2х лет
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="advantages__item">
+        <div
+          class="advantages-card"
+          style="background-image: url('images/content/advantages/5.jpg')"
+        >
+          <h3 class="advantages-card__title">ЛУЧШАЯ ЦЕНА</h3>
+          <div class="advantages-card__body">
+            <div class="advantages-card__text">
+              <p>
+                Полимерпесчаная смесь не ржавеет, не рассыпается, не впитывает
+                влагу, не гниет — гарантия от 2х лет
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="advantages__item">
+        <div
+          class="advantages-card"
+          style="background-image: url('images/content/advantages/6.jpg')"
+        >
+          <h3 class="advantages-card__title">100% УТИЛИЗАЦИЯ</h3>
+          <div class="advantages-card__body">
+            <div class="advantages-card__text">
+              <p>
+                Полимерпесчаная смесь не ржавеет, не рассыпается, не впитывает
+                влагу, не гниет — гарантия от 2х лет
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="news-product tabs">
+  <div class="container">
+    <h2 class="news-product__title">Наши новинки индивидуальной разработки</h2>
+
+    <div class="news-product__tabs">
+      <div class="news-product__top">
+        <ul class="news-product__top-list">
+          <li class="news-product__top-item">
+            <button class="news-product__top-btn news-product__top-btn--active">
+              Все
+            </button>
+          </li>
+          <li class="news-product__top-item">
+            <button class="news-product__top-btn">Скамейки</button>
+          </li>
+          <li class="news-product__top-item">
+            <button class="news-product__top-btn">Урны</button>
+          </li>
+          <li class="news-product__top-item">
+            <button class="news-product__top-btn">Остановки</button>
+          </li>
+          <li class="news-product__top-item">
+            <button class="news-product__top-btn">Павильоны / навесы</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="news-product__contents">
+      <div class="news-product__content active">
+        <div class="news-product__slider swiper">
+          <ul class="news-product__slides swiper-wrapper">
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/1.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лесок»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/2.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Скамейка «Берлин»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/3.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лондон»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/4.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Урна - пепельница «Эстет»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/1.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лесок»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/2.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Скамейка «Берлин»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/3.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лондон»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/4.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Урна - пепельница «Эстет»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <button
+            class="swiper-button-next"
+            type="button"
+            aria-label="Следующий"
+          ></button>
+          <button
+            class="swiper-button-prev"
+            type="button"
+            aria-label="Предыдущий"
+          ></button>
+        </div>
+      </div>
+      <div class="news-product__content">
+        <div class="news-product__slider swiper">
+          <ul class="news-product__slides swiper-wrapper">
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/1.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лесок»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/2.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Скамейка «Берлин»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/3.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лондон»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/4.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Урна - пепельница «Эстет»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/1.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лесок»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/2.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Скамейка «Берлин»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/3.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лондон»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/4.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Урна - пепельница «Эстет»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <button
+            class="swiper-button-next"
+            type="button"
+            aria-label="Следующий"
+          ></button>
+          <button
+            class="swiper-button-prev"
+            type="button"
+            aria-label="Предыдущий"
+          ></button>
+        </div>
+      </div>
+      <div class="news-product__content">
+        <div class="news-product__slider swiper">
+          <ul class="news-product__slides swiper-wrapper">
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/1.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лесок»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/2.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Скамейка «Берлин»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/3.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лондон»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/4.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Урна - пепельница «Эстет»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/1.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лесок»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/2.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Скамейка «Берлин»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/3.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лондон»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/4.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Урна - пепельница «Эстет»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <button
+            class="swiper-button-next"
+            type="button"
+            aria-label="Следующий"
+          ></button>
+          <button
+            class="swiper-button-prev"
+            type="button"
+            aria-label="Предыдущий"
+          ></button>
+        </div>
+      </div>
+      <div class="news-product__content">
+        <div class="news-product__slider swiper">
+          <ul class="news-product__slides swiper-wrapper">
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/1.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лесок»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/2.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Скамейка «Берлин»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/3.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лондон»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/4.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Урна - пепельница «Эстет»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/1.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лесок»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/2.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Скамейка «Берлин»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/3.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лондон»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/4.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Урна - пепельница «Эстет»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <button
+            class="swiper-button-next"
+            type="button"
+            aria-label="Следующий"
+          ></button>
+          <button
+            class="swiper-button-prev"
+            type="button"
+            aria-label="Предыдущий"
+          ></button>
+        </div>
+      </div>
+      <div class="news-product__content">
+        <div class="news-product__slider swiper">
+          <ul class="news-product__slides swiper-wrapper">
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/1.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лесок»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/2.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Скамейка «Берлин»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/3.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лондон»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/4.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Урна - пепельница «Эстет»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/1.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лесок»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/2.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Скамейка «Берлин»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/3.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Очаг «Лондон»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+            <li class="news-product__slide swiper-slide">
+              <article class="product-card">
+                <div class="product-card__top">
+                  <img src="images/content/products/4.png" alt="Работа" />
+
+                  <div class="product-card__in-stock">В наличии</div>
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__title">Урна - пепельница «Эстет»</h3>
+
+                  <p class="product-card__price">от 11 500 ₽</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <button
+            class="swiper-button-next"
+            type="button"
+            aria-label="Следующий"
+          ></button>
+          <button
+            class="swiper-button-prev"
+            type="button"
+            aria-label="Предыдущий"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="formula">
+  <div class="container">
+    <h2 class="formula__title">Спасаем страну <span>от пластика</span></h2>
+
+    <div class="formula__text">
+      <p>
+        Благодаря нашей технологии производства полимерпесчаного композита, две
+        наши скамейки -
+        <span>
+          это 12 000 утилизированных пластиковых пакетов и одно сохраненное
+          дерево!
+        </span>
+      </p>
+    </div>
+
+    <ul class="formula__list">
+      <li class="formula__item">
+        <div class="formula__img">
+          <img src="images/content/formula/1.png" alt="Пакетов" />
+        </div>
+        <div class="formula__info">
+          <p>12 000</p>
+          <span>пластиковых пакетов</span>
+        </div>
+      </li>
+      <li class="formula__item">
+        <div class="formula__info">
+          <p>2</p>
+          <span>скамейки</span>
+        </div>
+        <div class="formula__img">
+          <img src="images/content/formula/2.png" alt="Скамейка" />
+        </div>
+      </li>
+      <li class="formula__item">
+        <div class="formula__info">
+          <p>1</p>
+          <span>выжившее дерево</span>
+        </div>
+        <div class="formula__img">
+          <img src="images/content/formula/3.png" alt="Дерево" />
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="why" style="background-image: url('images/content/why-bg.jpg')">
+  <div class="container">
+    <h2 class="why__title">Почему мы?</h2>
+
+    <ul class="why__list">
+      <li class="why__item">
+        <h3 class="why__heading">
+          Минимальные сроки <br />
+          поставки
+        </h3>
+        <div class="why__text">
+          <p>
+            мы имеем собственное производство в городе и склад с изделиями в
+            наличи, что позволяет быстро поставлять заказы без задержек по
+            времени.
+          </p>
+        </div>
+      </li>
+      <li class="why__item">
+        <h3 class="why__heading">
+          Сервисный <br />
+          контракт
+        </h3>
+        <div class="why__text">
+          <p>
+            за наш счет любое поврежденное изделие будет отремонтировано и
+            приведено в первоначальный вид или полностью заменено на новое
+          </p>
+        </div>
+      </li>
+      <li class="why__item">
+        <h3 class="why__heading">
+          Брендирование <br />
+          изделий
+        </h3>
+        <div class="why__text">
+          <p>на боковых ножках можно разместить логотип Вашего парка</p>
+        </div>
+      </li>
+      <li class="why__item">
+        <h3 class="why__heading">
+          Доставка и сборка <br />
+          изделий
+        </h3>
+        <div class="why__text">
+          <p>
+            доставим в любую точку нашей страны и соберем всю мебель на площадке
+            клиента
+          </p>
+        </div>
+      </li>
+      <li class="why__item">
+        <h3 class="why__heading">
+          Выбор любого <br />
+          цвета
+        </h3>
+        <div class="why__text">
+          <p>красим продукцию по любому выбранному цвету RAL</p>
+        </div>
+      </li>
+      <li class="why__item">
+        <h3 class="why__heading">
+          Металлические <br />
+          вкладыши для урн
+        </h3>
+        <div class="why__text">
+          <p>дополнительно оснастим урны металлическими вкладышами</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section
+  class="request request--no-top"
+  style="background-image: url('images/content/request.jpg')"
+>
+  <div class="container">
+    <div class="request__top">
+      <h2 class="request__title">Хотите проверить сами?</h2>
+      <div class="request__text">
+        <p>
+          Получите бесплатный образец продукции и убедитесь в преимуществах
+          полимерпесчаной продукции
+        </p>
+      </div>
+    </div>
+
+    <div class="request__wrapper">
+      <div
+        class="request__preview"
+        style="background-image: url('images/content/bench.png')"
+      ></div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="name">Имя</label>
+          <input
+            class="form-submit__input"
+            type="text"
+            id="name"
+            placeholder="Введите Ваше имя"
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="name">Телефон</label>
+          <input
+            class="form-submit__input"
+            type="tel"
+            id="tel"
+            placeholder="+7 (___) ___ - __ - __"
+          />
+        </div>
+
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" required />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Нажимая на кнопку отправить я соглашаюсь с
+            <a href="#">политикой конфиденциальности</a>
+          </span>
+        </label>
+
+        <button class="form-submit__btn btn btn--white">
+          Получить образец
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer footer--no-border-top">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__left">
+        <div class="footer__col footer__col--first">
+          <a class="footer__logo logo" href="#">
+            <img src="images/logo.png" alt="Логотип" />
+          </a>
+
+          <div class="footer__socials socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link socials__link--vk" href="#"></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--telegram" href="#"></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--whatsapp" href="#"></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__copy">
+            <p>© 2022 ООО "Экосреда"</p>
+            <p>Все права защищены.</p>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+
+          <div class="footer__call-box">
+            <a class="footer__phone" href="tel:+7 (495)789-10-12">
+              +7 (495)789-10-12
+            </a>
+            <button class="footer__btn btn btn--light" type="button">
+              Заказать звонок
+            </button>
+          </div>
+        </div>
+
+        <div class="footer__cols">
+          <div class="footer__col">
+            <span class="footer__name">Компания </span>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">О компании</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Услуги</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Портфолио</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Контакты</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Блог</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--remove-on-mobile">
+            <span class="footer__name">Каталог</span>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Дачная и садовая мебель</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Скамейки</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Урны для мусора</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Павильоны</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Навесы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Беседки</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__right">
+        <div class="footer__contacts footer-contacts">
+          <span class="footer__name">Контакты</span>
+          <ul class="footer-contacts__list">
+            <li class="footer-contacts__item">
+              <a
+                class="footer-contacts__link footer-contacts__link--address"
+                href="#"
+              >
+                <span> Адрес производства:</span>
+                <span>Московская область, Подольский район, г. Климовск</span>
+              </a>
+            </li>
+            <li class="footer-contacts__item">
+              <a
+                class="footer-contacts__link footer-contacts__link--address"
+                href="#"
+              >
+                <span>Адрес офиса продаж:</span>
+                <span>Москва, Автозаводская 23а, корпус 2, БЦ Парк Легенд</span>
+              </a>
+            </li>
+            <li class="footer-contacts__item">
+              <a
+                class="footer-contacts__link footer-contacts__link--schedule"
+                href="#"
+              >
+                <span>Режим работы:</span>
+                <span>пн - пт с 09:00 до 20:00 | сб - вс - выходные</span>
+              </a>
+            </li>
+            <li class="footer-contacts__item">
+              <a
+                class="footer-contacts__link footer-contacts__link--email"
+                href="mailto:info@ecosreda.org"
+              >
+                <span>E-mail:</span>
+                <span>info@ecosreda.org</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__connect">
+          <div class="footer__call-box">
+            <a class="footer__phone" href="tel:+7 (495)789-10-12">
+              +7 (495)789-10-12
+            </a>
+            <button class="footer__btn btn btn--light" type="button">
+              Заказать звонок
+            </button>
+          </div>
+
+          <div class="footer__requisites footer-requisites">
+            <ul class="footer-requisites__list">
+              <li class="footer-requisites__item">Юридическое лицо</li>
+              <li class="footer-requisites__item">ООО "Экосреда"</li>
+              <li class="footer-requisites__item">ИНН 7751171919</li>
+              <li class="footer-requisites__item">КПП 775101001</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__text">
+      <p>
+        Обращаем Ваше внимание на то, что вся предоставленная на сайте
+        информация носит информационный характер и ни при каких условиях не
+        является офертой, определяемой положениями Гражданского кодекса
+        Российской Федерации.
+      </p>
+      <p>
+        Опубликованная на страницах данного сайта информация, продукция и ее
+        изображения являются объектом прав интеллектуальной собствености ООО
+        "Экосреда".
+      </p>
+      <p>
+        Использование изображений, фотографий и текстов, а также прочей
+        информации с сайта, возможно только с письменного согласия ООО
+        "Экосреда". Случаи незаконного использования информации будут
+        преследоваться по закону.
+      </p>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__payment">
+        <span>Способы оплаты:</span>
+        <img src="images/content/payment-methods.png" alt="Способы оплаты" />
+      </div>
+    </div>
+
+    <div class="footer__copy-mobile">
+      © 2022 ООО "Экосреда" Все права защищены.
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+<div class="footer-tools">
+  <a class="footer-tools__btn" href="#">Каталог продукции</a>
+
+  <div class="footer-tools__btns">
+    <a class="footer-tools__search" href="#" aria-label="Поиск"></a>
+    <a class="footer-tools__cart" href="#" aria-label="Корзина"></a>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!-- wNumb -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
+<!-- Input Mask -->
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

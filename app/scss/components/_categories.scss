@@ -1,0 +1,201 @@
+.categories {
+  @include adaptive-value('padding-top', 90, 50, 1);
+  @include adaptive-value('padding-bottom', 90, 50, 1);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include adaptive-value('margin-bottom', 60, 40, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: repeat(3, auto);
+      justify-content: center;
+    }
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+
+  &__item {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    border: 1px dashed var(--color-accent);
+    border-radius: 5px;
+    padding: 16px 62px 16px 42px;
+    font-size: 17px;
+    line-height: 1;
+    color: var(--color-accent);
+    position: relative;
+    transition: 200ms ease;
+
+    &::after {
+      @include elDef();
+      width: 10px;
+      height: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 40px;
+      @include maskImage(url('../images/icons/chevron.svg'), contain);
+      background-color: var(--color-accent);
+      transition: 200ms ease;
+    }
+
+    &:hover {
+      background-color: var(--color-accent);
+      border-style: dashed;
+      color: var(--color-white);
+
+      &::after {
+        background-color: var(--color-white);
+      }
+    }
+  }
+}
+
+.categories-card {
+  max-width: 310px;
+  background-color: var(--color-white);
+  border: 1px solid #e6e6e6;
+  transition: 300ms ease;
+  height: 100%;
+  padding-top: 20px;
+  text-align: center;
+
+  @include adaptive-value('max-width', 310, 170, 1);
+
+  &:hover {
+    box-shadow: 0px 10px 38px 0px rgba(174, 174, 174, 0.36);
+    border-color: transparent;
+    background-color: var(--color-white);
+    transform: scale(1.01);
+
+    .categories-card {
+      &__title {
+        color: var(--color-accent);
+      }
+      &__bottom {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &__info {
+        border-color: #e3e3e3;
+      }
+
+      &__btn {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  &__top {
+    width: 100%;
+    height: 190px;
+    margin-bottom: 30px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include adaptive-value('height', 190, 100, 1);
+
+    img {
+      @include img(contain);
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: 200ms ease;
+    @include adaptive-value('font-size', 18, 12, 1);
+    @include adaptive-value('padding-bottom', 15, 11, 1);
+    @include adaptive-value('margin-bottom', 20, 11, 1);
+
+    &::after {
+      @include elDef();
+      width: 20px;
+      height: 3px;
+      background-color: var(--color-accent);
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      @include adaptive-value('width', 20, 11, 1);
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    @include breakpointsMaxW($bp-container) {
+      p {
+        display: inline;
+      }
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      font-size: 14px;
+    }
+  }
+
+  &__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 200ms ease;
+    position: relative;
+    padding: 30px;
+
+    @include adaptive-value('padding', 30, 9, 1);
+  }
+
+  &__bottom {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: -40px;
+    padding: 0 20px 10px 20px;
+    width: 100%;
+    background-color: var(--color-white);
+    transition: 600ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &__btn {
+    width: 180px;
+    text-align: center;
+    transition: 400ms ease;
+    transform: scaleX(0);
+    transform-origin: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    @include adaptive-value('width', 180, 160, 1);
+    @include adaptive-value('font-size', 16, 14, 1);
+    @include adaptive-value('padding-top', 15, 10, 1);
+    @include adaptive-value('padding-bottom', 15, 10, 1);
+    @include breakpointsMaxW($bp-768) {
+      font-weight: 500;
+      text-shadow: none;
+    }
+  }
+}

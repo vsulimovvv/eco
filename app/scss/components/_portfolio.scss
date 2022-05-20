@@ -1,0 +1,146 @@
+.portfolio {
+  @include adaptive-value('padding-top', 40, 30, 1);
+  @include adaptive-value('padding-bottom', 70, 50, 1);
+
+  &__title {
+    @include fz40();
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+
+    @include breakpointsMaxW($bp-991) {
+      border: 0;
+      padding-bottom: 0;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    &-inner {
+      max-width: 920px;
+      width: 100%;
+      @include breakpointsMaxW($bp-991) {
+        overflow-x: auto;
+        width: 100%;
+      }
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 60px;
+
+      @include breakpointsMaxW($bp-container) {
+        gap: calc(15px + (60 - 15) * ((100vw - 991px) / (1270 - 991)));
+      }
+
+      @include breakpointsMaxW($bp-991) {
+        min-width: 850px;
+        gap: 30px;
+        justify-content: flex-start;
+      }
+    }
+
+    &-btn {
+      color: #888686;
+      position: relative;
+
+      &::after {
+        @include elDef();
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-accent);
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: 200ms ease;
+        bottom: -34px;
+        left: 0;
+
+        @include breakpointsMaxW($bp-991) {
+          bottom: 0px;
+        }
+      }
+
+      &.mixitup-control-active {
+        color: var(--color-accent);
+
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    @include adaptive-value('margin-bottom', 60, 40, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: repeat(2, minmax(auto, 395px));
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.portfolio-card {
+  max-width: 395px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &:hover {
+    .portfolio-card__top {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__top {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 280px;
+    @include adaptive-value('height', 280, 120, 1);
+    overflow: hidden;
+
+    img {
+      @include img(cover);
+      transition: 450ms ease;
+    }
+  }
+
+  &__title {
+    font-size: 19px;
+    @include adaptive-value('font-size', 19, 15, 1);
+    line-height: 1.1;
+    font-weight: 400;
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+}

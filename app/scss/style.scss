@@ -1,0 +1,61 @@
+@import 'libs';
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'global';
+
+@import './animations';
+
+// * ===== Other components
+@import './components/breadcrumbs';
+@import './components/swiper-options';
+@import './components/custom-checkbox';
+@import './components/custom-select';
+@import './components/popups';
+@import './components/menu';
+@import './components/socials';
+@import './components/rating';
+@import './components/form-submit';
+@import './components/accordion';
+@import './components/menu-mobile';
+
+// * ===== Card Components
+@import './components/card-product';
+@import './components/card-bench';
+
+// * ===== Section Components
+@import './components/footer';
+@import './components/header';
+@import './components/hero';
+@import './components/contacts';
+@import './components/download';
+@import './components/portfolio';
+@import './components/delivery';
+@import './components/payment';
+@import './components/purchase-returns';
+@import './components/blog';
+@import './components/descr-article';
+@import './components/read-also';
+@import './components/advantages';
+@import './components/categories';
+@import './components/why';
+@import './components/tagline';
+@import './components/formula';
+@import './components/news';
+@import './components/our-works';
+@import './components/news-product';
+@import './components/reviews';
+@import './components/request';
+@import './components/comments';
+@import './components/delivery-cost';
+@import './components/descr-service';
+@import './components/individual';
+@import './components/team';
+@import './components/save';
+@import './components/certificates';
+@import './components/history';
+@import './components/catalog';
+@import './components/product';
+@import './components/composition';
+@import './components/product-descr';

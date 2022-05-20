@@ -1,0 +1,335 @@
+.footer {
+  padding-bottom: 7px;
+  padding-top: 40px;
+  border-top: 1px solid #d9d9d9;
+  &__top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d9d9d9;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    color: #7c7c7c;
+    font-size: 16px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+      max-width: 600px;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      padding-bottom: 10px;
+    }
+  }
+
+&--no-border-top{
+  border-top: none;
+}
+
+  &__call-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    @include breakpointsMaxW($bp-991) {
+      align-items: flex-start;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      display: none;
+    }
+  }
+
+  &__copy {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #6a6a6a;
+
+    @include breakpointsMaxW($bp-576) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 30px;
+
+    @include breakpointsMaxW($bp-576) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__socials {
+    @include adaptive-value('margin-bottom', 55, 35, 1);
+
+    @include breakpointsMaxW($bp-576) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__left {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    @include breakpointsMaxW($bp-container) {
+      gap: 20px;
+    }
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__right {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 20px;
+    }
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__phone {
+    @include adaptive-value('font-size', 29, 22, 1);
+    line-height: 1;
+    font-weight: 400;
+    color: #1e1e1e;
+  }
+
+  &__connect {
+    @include breakpointsMaxW($bp-991) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__cols {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 60px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 20px;
+    }
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: 7px;
+
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: repeat(3, auto);
+      width: 100%;
+      font-size: 15px;
+    }
+  }
+
+  &__col {
+    &--remove-on-mobile {
+      @include breakpointsMaxW($bp-576) {
+        display: none;
+      }
+    }
+
+    &--first {
+      .footer__call-box {
+        display: none;
+      }
+
+      @include breakpointsMaxW($bp-576) {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
+        gap: 30px 10px;
+
+        .footer__call-box {
+          grid-column: 1/-1;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+  &__link {
+    transition: 200ms ease;
+    &:hover {
+      color: var(--color-dark);
+    }
+  }
+
+  .footer-requisites {
+    width: 120px;
+    font-size: 15px;
+    line-height: 1;
+    color: #575757;
+    margin-left: auto;
+    margin-right: 20px;
+
+    @include breakpointsMaxW($bp-991) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      width: 100%;
+    }
+
+    &__list {
+      display: grid;
+      gap: 14px;
+
+      @include breakpointsMaxW($bp-576) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &__item {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  &__name {
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #1e1e1e;
+    display: block;
+    margin-bottom: 20px;
+
+    @include breakpointsMaxW($bp-576) {
+      display: none;
+    }
+  }
+
+  .footer-contacts {
+    &__list {
+      display: grid;
+      gap: 14px;
+    }
+
+    &__item {
+      &:nth-child(2) {
+        @include breakpointsMaxW($bp-576) {
+          display: none;
+        }
+      }
+    }
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 15px;
+      font-weight: 700;
+      color: #949494;
+      padding-left: 20px;
+      position: relative;
+      line-height: 1;
+      gap: 10px;
+
+      &::after {
+        @include elDef();
+        width: 10px;
+        height: 10px;
+        left: 0;
+        top: 0;
+
+        background-color: var(--color-accent);
+      }
+
+      &--address {
+        &::after {
+          @include maskImage(url('../images/icons/location.svg'), contain);
+        }
+      }
+
+      &--schedule {
+        &::after {
+          @include maskImage(url('../images/icons/clock.svg'), contain);
+        }
+      }
+
+      &--email {
+        &::after {
+          @include maskImage(url('../images/icons/mail.svg'), contain);
+        }
+      }
+
+      span {
+        &:nth-child(2) {
+          color: #414141;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+    color: #6a6a6a;
+    padding: 15px 0;
+    border-bottom: 1px solid #d9d9d9;
+
+    @include breakpointsMaxW($bp-576) {
+      font-size: 11px;
+    }
+  }
+
+  &__bottom {
+    font-size: 14px;
+    line-height: 1;
+    color: #6a6a6a;
+    padding: 20px 0;
+  }
+
+  &__payment {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+
+    @include breakpointsMaxW($bp-576) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 11px;
+    }
+
+    img {
+      width: 435px;
+      height: 25px;
+      object-fit: contain;
+      @include adaptive-value('width', 435, 300, 1);
+    }
+  }
+
+  &__copy-mobile {
+    display: none;
+
+    @include breakpointsMaxW($bp-576) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 50px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.individual {
+  @include adaptive-value('padding-top', 70, 40, 1);
+  padding-bottom: 20px;
+
+  &__title {
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+    @include adaptive-value('font-size', 30, 20, 1);
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #323131;
+    @include breakpointsMaxW($bp-768) {
+      font-size: 16px;
+    }
+
+    p {
+      @include adaptive-value('margin-bottom', 25, 15, 1);
+    }
+  }
+}

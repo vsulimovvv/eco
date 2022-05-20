@@ -1,0 +1,13 @@
+.product-descr {
+  padding: 30px 0;
+
+  &__title {
+    @include fz40();
+    @include adaptive-value('margin-bottom', 25, 15, 1);
+  }
+
+  &__text {
+    font-size: 16px;
+    color: #777777;
+  }
+}

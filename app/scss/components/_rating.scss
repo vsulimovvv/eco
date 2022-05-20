@@ -1,0 +1,17 @@
+.rating {
+  &__stars {
+    display: flex;
+    align-items: center;
+  }
+
+  &__star {
+    width: 15px;
+    height: 15px;
+    @include maskImage(url('../images/icons/star.svg'), contain);
+    background-color: #fac630;
+
+    &--disabled{
+      background-color: #ccc;
+    }
+  }
+}

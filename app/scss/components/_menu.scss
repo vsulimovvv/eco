@@ -1,0 +1,192 @@
+.menu {
+  @include breakpointsMaxW($bp-991) {
+    display: none;
+  }
+  
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    line-height: 1;
+
+    &::after {
+      @include elDef();
+      right: 0;
+      top: 50%;
+      height: 100%;
+      width: 1px;
+      background-color: #e5e6e7;
+      transform: translateY(-50%);
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+      padding-right: 20px;
+
+      @include breakpointsMaxW($bp-container) {
+        margin-right: 10px;
+        padding-right: 10px;
+      }
+    }
+
+    &:last-child,
+    &:first-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3e4244;
+    transition: 200ms ease;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+
+    &:hover {
+      color: var(--color-accent);
+    }
+
+    &--dropdown {
+      padding-right: 15px;
+      position: relative;
+      border-radius: 5px;
+
+      &::after {
+        @include elDef();
+        width: 8px;
+        height: 8px;
+        right: 0;
+        top: 40%;
+        transform: translateY(-50%);
+        @include maskImage(url('../images/icons/chevron.svg'), 100%);
+        background-color: var(--color-dark);
+      }
+
+      &:hover {
+        &::before {
+          transform: scale(0);
+        }
+        &::after {
+          background-color: var(--color-accent);
+        }
+
+        & + .dropmenu {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    &--catalog {
+      padding: 15px 25px 15px 55px;
+      border-radius: 5px;
+      background-color: var(--color-accent);
+      color: var(--color-white);
+      position: relative;
+      border: 1px solid transparent;
+
+      &::after {
+        @include elDef();
+        width: 20px;
+        height: 15px;
+        @include maskImage(url('../images/icons/menu-icon.svg'), contain);
+        background-color: var(--color-white);
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+      }
+
+      &::before {
+        display: none;
+      }
+
+      &:hover {
+        color: var(--color-accent);
+        background-color: var(--color-accent-light);
+        border: 1px solid var(--color-accent);
+      }
+    }
+  }
+
+  .dropmenu {
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    width: 300px;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    background-color: var(--color-white);
+    box-shadow: 0px 19px 51px 0px rgba(53, 56, 62, 0.23);
+
+    border-radius: 5px;
+    padding: 10px 21px;
+    transition: 450ms ease;
+    transition-delay: 150ms;
+
+    &:hover {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    &__item {
+      border-bottom: 1px solid #ebebeb;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &__link {
+      display: block;
+      width: 100%;
+      color: var(--color-dark);
+      padding: 12px 0;
+      transition: 150ms ease;
+      position: relative;
+      padding-right: 20px;
+
+      &:hover {
+        & + .submenu {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+
+      &::after {
+        @include elDef();
+        width: 8px;
+        height: 8px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include maskImage(url('../images/sprite.svg#triangle'), 100%);
+        background-color: #d0d0d0;
+        transition: 150ms ease;
+      }
+
+      &:hover {
+        color: var(--color-accent);
+
+        &::after {
+          background-color: var(--color-accent);
+          transform: translateY(-50%) translateX(3px);
+        }
+      }
+    }
+  }
+}

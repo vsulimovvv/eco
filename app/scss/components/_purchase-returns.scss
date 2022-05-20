@@ -1,0 +1,22 @@
+.purchase-returns {
+  padding: 25px;
+  @include adaptive-value('padding-bottom', 70, 40, 1);
+
+  &__title {
+    @include fz30();
+    @include adaptive-value('margin-bottom', 33, 23, 1);
+    text-align: center;
+  }
+
+  &__text {
+    max-width: 950px;
+    margin: 0 auto;
+    @include adaptive-value('font-size', 18, 16, 1);
+
+    p {
+      &:not(:last-child) {
+        @include adaptive-value('margin-bottom', 25, 15, 1);
+      }
+    }
+  }
+}

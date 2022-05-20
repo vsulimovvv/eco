@@ -1,0 +1,233 @@
+.composition {
+  @include adaptive-value('padding-top', 60, 40, 1);
+  @include adaptive-value('padding-bottom', 60, 40, 1);
+
+  &__title {
+    @include fz40();
+    @include adaptive-value('margin-bottom', 40, 30, 1);
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px 110px;
+    align-items: center;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 10px 80px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-rows: auto;
+      gap: 50px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: auto;
+      justify-content: center;
+    }
+  }
+
+  &__preview {
+    grid-row: 1/-1;
+    grid-column: 2/3;
+
+    max-width: 590px;
+    width: 100%;
+    height: 590px;
+    object-fit: contain;
+    justify-self: center;
+    align-self: center;
+
+    position: relative;
+
+    @include breakpointsMaxW($bp-container) {
+      height: calc(480px + (590 - 480) * ((100vw - 991px) / (1270 - 991)));
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-column: 1/2;
+      display: none;
+    }
+
+    img {
+      @include img(contain);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    @include breakpointsMaxW($bp-991) {
+      align-self: start;
+      text-align: center;
+
+      img {
+        display: block;
+        height: 135px;
+        margin-bottom: 20px;
+
+        @include breakpointsMaxW($bp-576) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &::before {
+      @include elDef();
+      width: 65px;
+      height: 1px;
+      background-color: var(--color-accent);
+      top: 50%;
+      transform: translateY(-50%);
+      right: -75px;
+
+      @include breakpointsMaxW($bp-container) {
+        width: 45px;
+        right: -55px;
+      }
+
+      @include breakpointsMaxW($bp-991) {
+        display: none;
+      }
+    }
+
+    &--sand {
+      @include breakpointsMaxW($bp-991) {
+        grid-row: 2/1;
+        grid-column: 3/4;
+      }
+
+      @include breakpointsMaxW($bp-768) {
+        grid-row: initial;
+        grid-column: initial;
+      }
+    }
+
+    &--plastic {
+      grid-row: 1/-1;
+      grid-column: 3/4;
+      padding-bottom: 80px;
+      position: relative;
+
+      @include breakpointsMaxW($bp-991) {
+        grid-column: 2/3;
+        grid-row: initial;
+      }
+
+      @include breakpointsMaxW($bp-768) {
+        grid-column: initial;
+      }
+
+      &::after {
+        @include elDef();
+        width: 180px;
+        height: 60px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        @include backgroundImage(
+          url('../images/content/plastic-icons.png'),
+          contain
+        );
+      }
+
+      &::before {
+        right: initial;
+        left: -75px;
+        @include breakpointsMaxW($bp-container) {
+          left: -55px;
+        }
+      }
+
+      img {
+        display: block;
+        margin-bottom: 20px;
+
+        @include breakpointsMaxW($bp-576) {
+          margin-bottom: 10px;
+        }
+      }
+
+      .composition__name {
+        margin-bottom: 20px;
+        @include breakpointsMaxW($bp-576) {
+          margin-bottom: 10px;
+        }
+      }
+
+      .composition__text {
+        max-width: 210px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #484848;
+        text-align: center;
+      }
+    }
+  }
+
+  &__name {
+    line-height: 1;
+    font-weight: 600;
+    color: #323131;
+    display: block;
+
+    @include adaptive-value('font-size', 25, 20, 1);
+  }
+
+  &__circle {
+    display: block;
+    background-image: linear-gradient(0deg, #639933 -23%, #82c04b 126%);
+    box-shadow: 0px 0px 17px 0px #80d139;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+
+    &--first {
+      left: 20px;
+      top: 125px;
+
+      @include breakpointsMaxW($bp-container) {
+        left: calc(30px + (20 - 30) * ((100vw - 991px) / (1270 - 991)));
+        top: calc(95px + (125 - 95) * ((100vw - 991px) / (1270 - 991)));
+      }
+    }
+
+    &--second {
+      left: 20px;
+      bottom: 125px;
+
+      @include breakpointsMaxW($bp-container) {
+        left: calc(30px + (20 - 30) * ((100vw - 991px) / (1270 - 991)));
+        bottom: calc(105px + (125 - 105) * ((100vw - 991px) / (1270 - 991)));
+      }
+    }
+
+    &--third {
+      right: 0;
+      top: 50%;
+      transform: translate(50%, -50%);
+    }
+
+    &::after {
+      @include elDef();
+      width: 18px;
+      height: 18px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--color-white);
+      border-radius: 50%;
+    }
+  }
+}

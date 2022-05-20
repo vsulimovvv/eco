@@ -1,0 +1,55 @@
+.delivery-cost {
+  @include adaptive-value('padding-bottom', 80, 50, 1);
+  
+  &__top {
+    text-align: center;
+    max-width: 545px;
+    width: 100%;
+    margin: 0 auto;
+    @include adaptive-value('margin-bottom', 45, 35, 1);
+  }
+
+  &__title {
+    line-height: 1.2;
+    font-weight: 600;
+    color: #323131;
+    @include adaptive-value('font-size', 34, 24, 1);
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #888888;
+  }
+}
+
+.form-delivery {
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 17px;
+
+  &__group {
+    width: 100%;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #ffffff;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+  }
+
+  &__btn {
+    font-size: 21px;
+    text-transform: uppercase;
+
+    @include breakpointsMaxW($bp-768) {
+      font-size: 16px;
+    }
+  }
+}
