@@ -706,7 +706,7 @@ input[type='file'] {
         top: 50%;
         transform: translateY(-50%);
         @include maskImage(url('../images/icons/triangle.svg'), 100%);
-        background-color: #e4e4e4;;
+        background-color: #e4e4e4;
       }
 
       &:hover {
@@ -853,3 +853,4 @@ input[type='file'] {
     }
   }
 }
+

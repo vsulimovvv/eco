@@ -1,0 +1,194 @@
+<section class="comments">
+  <div class="container">
+    <h2 class="comments__title">Комментарии</h2>
+
+    <form class="comments__form form-comment">
+      <div class="form-comment__wrapper">
+        <div class="form-comment__left">
+          <div class="form-comment__img">
+            <img src="images/content/comment.jpg" alt="аватар" />
+          </div>
+
+          <div class="form-comment__set">
+            <label class="custom-file-upload" for="file-upload">
+              Установить аватар
+            </label>
+            <input id="file-upload" type="file" />
+          </div>
+        </div>
+
+        <div class="form-comment__right">
+          <div class="form-comment__inputs">
+            <label class="form-comment__group">
+              <input
+                class="form-comment__input"
+                type="text"
+                placeholder="Имя и Фамилия"
+              />
+            </label>
+            <label class="form-comment__group">
+              <input
+                class="form-comment__input"
+                type="text"
+                placeholder="Тема комментария"
+              />
+            </label>
+
+            <label class="form-comment__group form-comment__group--textarea">
+              <textarea
+                class="form-comment__input"
+                placeholder="Ваш комментарий"
+              ></textarea>
+            </label>
+          </div>
+
+          <div class="form-comment__bottom">
+            <div class="form-comment__come come-box">
+              <span class="come-box__title">Войти с</span>
+
+              <ul class="come-box__list">
+                <li class="come-box__item">
+                  <a class="come-box__link come-box__link--vk" href="#"></a>
+                </li>
+                <li class="come-box__item">
+                  <a
+                    class="come-box__link come-box__link--facebook"
+                    href="#"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <label class="form-comment__group form-comment__group--email">
+              <input
+                class="form-comment__input"
+                type="email"
+                placeholder="Электронная почта"
+              />
+            </label>
+
+            <div class="form-comment__rating rating-choose">
+              <span>Рейтинг</span>
+
+              <div class="rating-area">
+                <input type="radio" id="star-5" name="rating" value="5" />
+                <label for="star-5" title="Оценка «5»"></label>
+                <input type="radio" id="star-4" name="rating" value="4" />
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-3" name="rating" value="3" />
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-2" name="rating" value="2" />
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-1" name="rating" value="1" />
+                <label for="star-1" title="Оценка «1»"></label>
+              </div>
+            </div>
+
+            <button class="form-comment__btn btn" type="submit">
+              Отправить
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="comments__count">
+      <p><span>2</span> комментария</p>
+    </div>
+
+    <ul class="comments__list">
+      <li class="comments-item">
+        <div class="comments-item__left">
+          <img
+            class="comments-item__img"
+            src="images/content/comment.jpg"
+            alt="Аватар"
+          />
+        </div>
+
+        <div class="comments-item__right">
+          <div class="comments-item__top">
+            <div class="comments-item__top-left">
+              <span class="comments-item__heading">Отличный ремонт!</span>
+              <div class="comments-item__info">
+                <p class="comments-item__name">Иван Иванов</p>
+                <span class="comments-item__date">27.04.2022</span>
+              </div>
+            </div>
+            <div class="comments-item__top-right">
+              <div class="rating"></div>
+              <div class="comments-item__count">
+                <span>5</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="comments-item__text">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+
+          <button class="comments-item__answer-btn" type="button">
+            Ответить
+          </button>
+        </div>
+      </li>
+      <li class="comments-item">
+        <div class="comments-item__left">
+          <img
+            class="comments-item__img"
+            src="images/content/no-avatar.png"
+            alt="Аватар"
+          />
+        </div>
+
+        <div class="comments-item__right">
+          <div class="comments-item__top">
+            <div class="comments-item__top-left">
+              <span class="comments-item__heading">Отличный ремонт!</span>
+              <div class="comments-item__info">
+                <p class="comments-item__name">Иван Иванов</p>
+                <span class="comments-item__date">27.04.2022</span>
+              </div>
+            </div>
+            <div class="comments-item__top-right">
+              <div class="rating"></div>
+              <div class="comments-item__count">
+                <span>5</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="comments-item__text">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+
+          <button class="comments-item__answer-btn" type="button">
+            Ответить
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

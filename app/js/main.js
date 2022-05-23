@@ -244,25 +244,11 @@ window.addEventListener('DOMContentLoaded', () => {
   //* Change Background Header
   function scrollHeader() {
     const nav = document.querySelector('header');
-    // const breadcrumbs = document.querySelectorAll('.breadcrumbs');
-
-    // function addPadding() {
-    //   breadcrumbs.forEach((el) => {
-    //     el.style.paddingTop = '150px';
-    //   });
-    // }
-    // function removePadding() {
-    //   breadcrumbs.forEach((el) => {
-    //     el.style.paddingTop = '30px';
-    //   });
-    // }
 
     if (this.scrollY >= 100) {
       nav.classList.add('scroll-header');
-      // addPadding();
     } else {
       nav.classList.remove('scroll-header');
-      // removePadding();
     }
   }
   window.addEventListener('scroll', scrollHeader);
@@ -305,6 +291,9 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     }
     bindModal('.download__btn', '.popup--download', '.popup__close');
+    bindModal('.btn-call', '.popup--call', '.popup__close');
+    bindModal('.btn-cooperation', '.popup--cooperation', '.popup__close');
+    bindModal('.header__search', '.popup--search', '.popup__close');
   })();
 
   // * ===== Toggle Tabs
