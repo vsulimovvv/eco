@@ -1,8 +1,8 @@
 .save {
   @include background(cover);
   @include adaptive-value('padding-top', 80, 50, 1);
-  @include adaptive-value('padding-bottom', 80, 50, 1);
-
+  @include adaptive-value('padding-bottom', 150, 30, 1);
+  
   &__title {
     @include fz40();
     text-align: center;
@@ -41,6 +41,7 @@
     position: absolute;
     top: 50%;
     left: 0;
+    // bottom: 30px;
     width: 365px;
     height: 245px;
     @include background(contain);
