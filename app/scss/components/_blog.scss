@@ -47,17 +47,22 @@
     align-items: center;
     gap: 10px;
 
+    &__name{
+      font-weight: 700;
+    }
+
     &__list {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 15px;
+
       @include breakpointsMaxW($bp-576) {
         flex-direction: column;
         align-items: flex-start;
       }
     }
 
-    &__btn {
+    &__btn {color: #6a6a6a;
       &--active {
         color: var(--color-accent);
         text-decoration: underline;

@@ -51,8 +51,12 @@
   }
 
   &--question {
-    padding-bottom: 0;
+    padding-bottom: 90px;
+    @include breakpointsMaxW($bp-991) {
+      padding-bottom: 0;
+    }
 
+    position: relative;
     .form-submit {
       &__group {
         margin-bottom: 20px;
@@ -61,7 +65,25 @@
 
     .request {
       &__wrapper {
+        display: grid;
+        grid-template-columns: initial;
         gap: 40px;
+        z-index: 1;
+      }
+
+      &__form {
+        padding-left: 690px;
+        z-index: 1;
+
+        @include breakpointsMaxW($bp-container) {
+          padding-left: calc(
+            500px + (655 - 500) * ((100vw - 991px) / (1270 - 991))
+          );
+        }
+
+        @include breakpointsMaxW($bp-991) {
+          padding-left: 0;
+        }
       }
 
       &__title {
@@ -69,12 +91,30 @@
       }
 
       &__preview {
-        height: 620px;
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        width: 690px;
+        height: 560px;
+        z-index: 0;
+        left: max(15px, calc((100% - 1270px) / 2));
 
         @include breakpointsMaxW($bp-container) {
-          height: 450px;
+          width: calc(450px + (690 - 490) * ((100vw - 991px) / (1270 - 991)));
+          height: calc(360px + (560 - 360) * ((100vw - 991px) / (1270 - 991)));
+        }
 
-          height: calc(250px + (450 - 250) * ((100vw - 375px) / (991 - 375)));
+        @include breakpointsMaxW($bp-991) {
+          position: static;
+          height: 450px;
+          margin: 0 auto;
+          width: 450px;
+
+          height: calc(250px + (360 - 250) * ((100vw - 375px) / (991 - 375)));
+        }
+
+        @include breakpointsMaxW($bp-576) {
+          width: 280px;
         }
       }
     }

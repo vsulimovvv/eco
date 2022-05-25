@@ -2,6 +2,45 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ===== Mask input
   $('input[type="tel"]').mask('+7 (999) 999-99-99');
 
+  // * ==== Counter
+  (function counter() {
+    const counterEl = document.querySelectorAll('.counter');
+
+    counterEl.forEach((item) => {
+      if (item) {
+        item.addEventListener('click', (e) => {
+          if (e.target.classList.contains('counter__btn--increase')) {
+            e.target.previousElementSibling.value++;
+          }
+
+          if (e.target.classList.contains('counter__btn--decrease')) {
+            if (e.target.nextElementSibling.value > 1) {
+              e.target.nextElementSibling.value--;
+            }
+          }
+        });
+      }
+    });
+  })();
+
+  //* Change Background Header
+  function scrollHeader() {
+    const nav = document.querySelector('header');
+
+    if (this.scrollY >= 100) {
+      nav.classList.add('scroll-header');
+    } else {
+      nav.classList.remove('scroll-header');
+    }
+  }
+  window.addEventListener('scroll', scrollHeader);
+
+  // ! Change
+  const header = document.querySelector('header');
+  if (window.pageYOffset >= 100) {
+    header.classList.add('scroll-header');
+  }
+
   // * ===== Slider
   (function slider() {
     const sliderEl = document.querySelector('.hero__slider');
@@ -15,6 +54,35 @@ window.addEventListener('DOMContentLoaded', () => {
         prevEl: document.querySelector('.hero__slider .swiper-button-prev'),
       },
     });
+  })();
+
+  (function showMore() {
+    const showMoreBtn = document.querySelector('.show-more-btn');
+    if (showMoreBtn) {
+      let currentItem = 4;
+      console.log(showMoreBtn);
+
+      const boxes = [...document.querySelectorAll('.categories__item')];
+
+      console.log(boxes);
+
+      const boxesRemove = boxes.slice(8);
+
+      boxesRemove.forEach((el) => {
+        el.style.display = 'none';
+      });
+
+      showMoreBtn.addEventListener('click', (e) => {
+        for (let i = currentItem; i < currentItem + 4; i++) {
+          boxesRemove[i].style.display = 'block';
+        }
+        currentItem += 4;
+
+        if (currentItem >= boxesRemove.length) {
+          showMoreBtn.style.display = 'none';
+        }
+      });
+    }
   })();
 
   // * ===== Slider Handle
@@ -241,24 +309,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })();
 
-  //* Change Background Header
-  function scrollHeader() {
-    const nav = document.querySelector('header');
-
-    if (this.scrollY >= 100) {
-      nav.classList.add('scroll-header');
-    } else {
-      nav.classList.remove('scroll-header');
-    }
-  }
-  window.addEventListener('scroll', scrollHeader);
-
-  // ! Change
-  const header = document.querySelector('header');
-  if (window.pageYOffset >= 100) {
-    header.classList.add('scroll-header');
-  }
-
   // * ===== Modal
   (function modals() {
     function bindModal(openBtn, modal, close) {
@@ -294,6 +344,7 @@ window.addEventListener('DOMContentLoaded', () => {
     bindModal('.btn-call', '.popup--call', '.popup__close');
     bindModal('.btn-cooperation', '.popup--cooperation', '.popup__close');
     bindModal('.header__search', '.popup--search', '.popup__close');
+    bindModal('.btn-subscribe', '.popup--subscribe', '.popup__close');
   })();
 
   // * ===== Toggle Tabs

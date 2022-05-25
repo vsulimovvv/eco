@@ -197,7 +197,7 @@
   }
 
   &__rating {
-    max-width: 215px;
+    min-width: 215px;
     color: #9c9c9c;
     flex-shrink: 0;
     line-height: 1;
