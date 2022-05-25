@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
   function scrollHeader() {
     const nav = document.querySelector('header');
 
-    if (this.scrollY >= 100) {
+    if (this.scrollY >= 150) {
       nav.classList.add('scroll-header');
     } else {
       nav.classList.remove('scroll-header');
@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // ! Change
   const header = document.querySelector('header');
-  if (window.pageYOffset >= 100) {
+  if (window.pageYOffset >= 150) {
     header.classList.add('scroll-header');
   }
 

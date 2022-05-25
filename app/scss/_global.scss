@@ -58,6 +58,12 @@ body {
   }
 }
 
+.main {
+  &.mt150 {
+    margin-top: 150px;
+  }
+}
+
 .logo {
   width: 173px;
   height: 37px;
@@ -853,4 +859,3 @@ input[type='file'] {
     }
   }
 }
-

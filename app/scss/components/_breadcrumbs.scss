@@ -1,6 +1,6 @@
 .breadcrumbs {
   @include adaptive-value('padding-top', 20, 15, 1);
-
+  margin-top: 150px;
   &--absolute {
     position: absolute;
     top: 150px;

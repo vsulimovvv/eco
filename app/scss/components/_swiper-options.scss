@@ -5,6 +5,7 @@
   margin-top: 0;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 5;
 
   @include adaptive-value('width', 35, 28, 1);
   @include adaptive-value('height', 35, 28, 1);
