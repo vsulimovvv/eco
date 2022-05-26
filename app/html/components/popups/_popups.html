@@ -115,6 +115,68 @@
   </div>
 </div>
 
+<div class="popup popup--passport">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Форма заявки паспорта к товару</h2>
+
+      <form class="form-passport">
+        <div class="form-passport__group form-passport__group--small">
+          <label class="form-passport__label">Телефон</label>
+          <input
+            class="form-passport__input"
+            type="tel"
+            placeholder="+7 (999) 999 - 99 - 99"
+          />
+        </div>
+
+        <div class="form-passport__group form-passport__group--small">
+          <label class="form-passport__label">Товар</label>
+          <input
+            class="form-passport__input"
+            type="text"
+            placeholder="Скамья парковая"
+          />
+        </div>
+        <div class="form-passport__group">
+          <label class="form-passport__label">E-mail</label>
+          <input
+            class="form-passport__input"
+            type="text"
+            placeholder="E-mail"
+          />
+        </div>
+        <div class="form-passport__group">
+          <label class="form-passport__label">Сообщение</label>
+          <textarea
+            class="form-passport__input form-passport__input--textarea"
+            placeholder="Опишите в двух словах что именно вам требуется"
+          ></textarea>
+        </div>
+
+        <label class="checkbox checkbox--dark">
+          <input class="checkbox__input" type="checkbox" checked />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Нажимая на кнопку отправить я соглашаюсь с
+            <a href="#"> политикой конфиденциальности</a>
+          </span>
+        </label>
+
+        <button class="form-passport__btn btn btn--no-shadow" type="submit">
+          Отправить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
 <div class="popup popup--cooperation">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
@@ -220,12 +282,19 @@
 
     <div class="popup__wrapper">
       <div class="popup__text">
-        <h2 class="popup__title">Подпишитесь на нашу рассылку, чтобы быть в курсе последних новостей нашей компании</h2>
+        <h2 class="popup__title">
+          Подпишитесь на нашу рассылку, чтобы быть в курсе последних новостей
+          нашей компании
+        </h2>
       </div>
 
       <form class="form-delivery">
         <label class="form-delivery__group">
-          <input class="form-delivery__input" type="email" placeholder="Ваш email" />
+          <input
+            class="form-delivery__input"
+            type="email"
+            placeholder="Ваш email"
+          />
         </label>
 
         <button class="form-delivery__btn btn btn--no-shadow" type="button">

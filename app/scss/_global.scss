@@ -444,6 +444,12 @@ input[type='file'] {
 }
 
 .product-equipment {
+  &__name {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    @include adaptive-value('font-size', 24, 18, 1);
+  }
   &__item {
     font-size: 16px;
     line-height: 1.4;

@@ -4,8 +4,9 @@
   &--absolute {
     position: absolute;
     top: 150px;
-    left: max(15px, calc((100% - 1270px) / 2));
+    left: max(15px, calc((100% - 1240px) / 2));
     z-index: 8;
+    margin-top: 0;
 
     @include breakpointsMaxW($bp-991){
       top: 130px;
