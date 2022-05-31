@@ -80,6 +80,11 @@
     position: relative;
   }
 
+  &__slides {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   &__content {
     position: relative;
 
@@ -104,7 +109,6 @@
 
   .swiper-slide {
     box-sizing: border-box;
-
     @include adaptive-value('max-width', 305, 220, 1);
   }
 

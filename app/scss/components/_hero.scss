@@ -65,6 +65,10 @@
 
   &__slider {
     .swiper-pagination {
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      
       &-bullet {
         width: 5px;
         height: 5px;

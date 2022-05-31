@@ -346,6 +346,7 @@ window.addEventListener('DOMContentLoaded', () => {
     bindModal('.header__search', '.popup--search', '.popup__close');
     bindModal('.btn-subscribe', '.popup--subscribe', '.popup__close');
     bindModal('.btn-passport', '.popup--passport', '.popup__close');
+    bindModal('.btn-development', '.popup--development', '.popup__close');
   })();
 
   // * ===== Toggle Tabs

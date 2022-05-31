@@ -1,6 +1,11 @@
 .breadcrumbs {
   @include adaptive-value('padding-top', 20, 15, 1);
-  margin-top: 150px;
+  margin-top: 160px;
+
+  @include breakpointsMaxW($bp-991){
+    margin-top: 130px;
+  }
+
   &--absolute {
     position: absolute;
     top: 150px;
