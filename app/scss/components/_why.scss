@@ -53,6 +53,11 @@
     height: 100%;
     min-height: 320px;
     @include adaptive-value('min-height', 320, 220, 1);
+    transition: 300ms ease;
+
+    &:hover {
+      transform: translateY(-6px);
+    }
 
     @include breakpointsMaxW($bp-768) {
       padding: 15px;

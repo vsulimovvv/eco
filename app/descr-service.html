@@ -22,6 +22,12 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 />
+<!--  -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.17/css/intlTelInput.css"
+/>
+
 <!-- Choices JS  -->
 <link
   rel="stylesheet"
@@ -119,13 +125,19 @@
 
       <form class="form-delivery">
         <label class="form-delivery__group">
-          <input class="form-delivery__input" type="text" placeholder="Имя" />
+          <input
+            class="form-delivery__input"
+            type="text"
+            placeholder="Имя"
+            required
+          />
         </label>
         <label class="form-delivery__group">
           <input
             class="form-delivery__input"
             type="tel"
             placeholder="+7 (999) 999 - 99 - 99"
+            required
           />
         </label>
         <label class="form-delivery__group">
@@ -544,16 +556,16 @@
           <span class="data-box__accent">написать нам</span>
         </a>
 
-        <a class="data-box data-box--location" href="#">
+        <a class="data-box data-box--location">
           <address class="data-box__text">Москва, Название улицы 10</address>
           <span class="data-box__accent">найти на карте</span>
         </a>
         <a class="data-box data-box--phone-icon" href="tel:+74957891012">
-          <span class="data-box__phone"> 8 (495) 789 10 12</span>
+          <span class="data-box__phone">+7 (495) 789 10 12</span>
           <span class="data-box__gray">по будням с 09:00 до 18:00</span>
         </a>
         <a class="data-box data-box--phone" href="tel:+78001234567">
-          <span class="data-box__phone">8 800 123 45 67</span>
+          <span class="data-box__phone">+7 800 123 45 67</span>
           <span class="data-box__accent">Бесплатный звонок по России</span>
         </a>
 
@@ -598,26 +610,201 @@
                       <ul class="submenu__list">
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Все скамейки</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">
                             Парковые и уличные
                           </a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Современные</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Чугунные</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Стальные</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Алюминиевые</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Экономичные</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -628,26 +815,201 @@
                       <ul class="submenu__list">
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Все скамейки</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">
                             Парковые и уличные
                           </a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Современные</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Чугунные</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Стальные</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Алюминиевые</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Экономичные</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -658,26 +1020,194 @@
                       <ul class="submenu__list">
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Все скамейки</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">
                             Парковые и уличные
                           </a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Современные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Чугунные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Стальные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Алюминиевые</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Экономичные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -688,26 +1218,290 @@
                       <ul class="submenu__list">
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Все скамейки</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">
                             Парковые и уличные
                           </a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                                <div class="submenu submenu--sub">
+                                  <ul class="submenu__list">
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                                <div class="submenu submenu--sub">
+                                  <ul class="submenu__list">
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                                <div class="submenu submenu--sub">
+                                  <ul class="submenu__list">
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                                <div class="submenu submenu--sub">
+                                  <ul class="submenu__list">
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                      <a class="dropmenu__link" href="#">
+                                        Парковые и уличные
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Современные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Чугунные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Стальные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Алюминиевые</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Экономичные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -718,26 +1512,194 @@
                       <ul class="submenu__list">
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Все скамейки</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">
                             Парковые и уличные
                           </a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Современные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Чугунные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Стальные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Алюминиевые</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Экономичные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -748,26 +1710,194 @@
                       <ul class="submenu__list">
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Все скамейки</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">
                             Парковые и уличные
                           </a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Современные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Чугунные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Стальные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Алюминиевые</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Экономичные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -780,26 +1910,194 @@
                       <ul class="submenu__list">
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Все скамейки</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">
                             Парковые и уличные
                           </a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Современные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Чугунные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Стальные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Алюминиевые</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Экономичные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -810,26 +2108,194 @@
                       <ul class="submenu__list">
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Все скамейки</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">
                             Парковые и уличные
                           </a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Современные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Чугунные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Стальные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Алюминиевые</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Экономичные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -840,26 +2306,194 @@
                       <ul class="submenu__list">
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Все скамейки</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">
                             Парковые и уличные
                           </a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Современные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Чугунные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Стальные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Алюминиевые</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Экономичные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -870,26 +2504,194 @@
                       <ul class="submenu__list">
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Все скамейки</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">
                             Парковые и уличные
                           </a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Современные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Чугунные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Стальные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Алюминиевые</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Экономичные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -900,26 +2702,195 @@
                       <ul class="submenu__list">
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Все скамейки</a>
+
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">
                             Парковые и уличные
                           </a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Современные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Чугунные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Стальные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Алюминиевые</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="submenu__item">
                           <a class="dropmenu__link" href="#">Экономичные</a>
+                          <div class="submenu submenu--sub">
+                            <ul class="submenu__list">
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                              <li class="submenu__item">
+                                <a class="dropmenu__link" href="#">
+                                  Парковые и уличные
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -1050,6 +3021,11 @@
     <div class="our-works__tabs">
       <div class="our-works__top">
         <ul class="our-works__top-list">
+          <li class="our-works__top-item">
+            <button class="our-works__top-btn tabs-btn tabs-btn--active">
+              Все
+            </button>
+          </li>
           <li class="our-works__top-item">
             <button class="our-works__top-btn tabs-btn tabs-btn--active">
               Парки и скверы
@@ -1528,7 +3504,119 @@
         ></button>
       </div>
     </div>
-  
+    <div class="our-works__content tabs-content">
+      <div class="our-works__slider swiper">
+        <ul class="our-works__slides swiper-wrapper">
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <a class="work-card__top" href="#">
+                <img src="images/content/works/1.jpg" alt="Работа" />
+              </a>
+              <div class="work-card__body">
+                <h3 class="work-card__title">
+                  <a href="#">Название работы</a>
+                </h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <a class="work-card__top" href="#">
+                <img src="images/content/works/2.jpg" alt="Работа" />
+              </a>
+              <div class="work-card__body">
+                <h3 class="work-card__title">
+                  <a href="#"> Название работы</a>
+                </h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <a class="work-card__top" href="#">
+                <img src="images/content/works/3.jpg" alt="Работа" />
+              </a>
+              <div class="work-card__body">
+                <h3 class="work-card__title">
+                  <a href="#">Название работы</a>
+                </h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <a class="work-card__top" href="#">
+                <img src="images/content/works/4.jpg" alt="Работа" />
+              </a>
+              <div class="work-card__body">
+                <h3 class="work-card__title">
+                  <a href="#">Название работы</a>
+                </h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <a class="work-card__top" href="#">
+                <img src="images/content/works/1.jpg" alt="Работа" />
+              </a>
+              <div class="work-card__body">
+                <h3 class="work-card__title">
+                  <a href="#">Название работы</a>
+                </h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <a class="work-card__top" href="#">
+                <img src="images/content/works/2.jpg" alt="Работа" />
+              </a>
+              <div class="work-card__body">
+                <h3 class="work-card__title">
+                  <a href="#"> Название работы</a>
+                </h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <a class="work-card__top" href="#">
+                <img src="images/content/works/3.jpg" alt="Работа" />
+              </a>
+              <div class="work-card__body">
+                <h3 class="work-card__title">
+                  <a href="#">Название работы</a>
+                </h3>
+              </div>
+            </article>
+          </li>
+          <li class="our-works__slide swiper-slide">
+            <article class="work-card">
+              <a class="work-card__top" href="#">
+                <img src="images/content/works/4.jpg" alt="Работа" />
+              </a>
+              <div class="work-card__body">
+                <h3 class="work-card__title">
+                  <a href="#">Название работы</a>
+                </h3>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <button
+          class="swiper-button-next"
+          type="button"
+          aria-label="Следующий"
+        ></button>
+        <button
+          class="swiper-button-prev"
+          type="button"
+          aria-label="Предыдущий"
+        ></button>
+      </div>
+    </div>
   </div>
 
   <div class="our-works__bottom">
@@ -2680,28 +4768,19 @@
           <span class="footer__name">Контакты</span>
           <ul class="footer-contacts__list">
             <li class="footer-contacts__item">
-              <a
-                class="footer-contacts__link footer-contacts__link--address"
-                href="#"
-              >
+              <a class="footer-contacts__link footer-contacts__link--address">
                 <span> Адрес производства:</span>
                 <span>Московская область, Подольский район, г. Климовск</span>
               </a>
             </li>
             <li class="footer-contacts__item">
-              <a
-                class="footer-contacts__link footer-contacts__link--address"
-                href="#"
-              >
+              <a class="footer-contacts__link footer-contacts__link--address">
                 <span>Адрес офиса продаж:</span>
                 <span>Москва, Автозаводская 23а, корпус 2, БЦ Парк Легенд</span>
               </a>
             </li>
             <li class="footer-contacts__item">
-              <a
-                class="footer-contacts__link footer-contacts__link--schedule"
-                href="#"
-              >
+              <a class="footer-contacts__link footer-contacts__link--schedule">
                 <span>Режим работы:</span>
                 <span>пн - пт с 09:00 до 20:00 | сб - вс - выходные</span>
               </a>
@@ -2755,8 +4834,11 @@
       <p>
         Использование изображений, фотографий и текстов, а также прочей
         информации с сайта, возможно только с письменного согласия ООО
-        "Экосреда". Случаи незаконного использования информации будут
-        преследоваться по закону.
+        "Экосреда".
+      </p>
+      <p>
+        Случаи незаконного использования информации будут преследоваться по
+        закону.
       </p>
     </div>
 
@@ -2802,6 +4884,9 @@
   type="text/javascript"
 ></script>
 
+<!-- Tel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.17/js/intlTelInput.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
@@ -2809,6 +4894,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
 <!-- Input Mask -->
 <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.17/js/utils.js"></script>
 <!-- JS -->
 <script src="js/main.min.js"></script>
 

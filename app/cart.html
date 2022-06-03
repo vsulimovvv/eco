@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="css/style.min.css" />
 
 
-    <title>Title</title>
+    <title>Экосреда</title>
   </head>
 
   <body>
@@ -385,6 +385,19 @@
 
 
     <h1 class="visually-hidden">Главная</h1>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active"> Корзина </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <div class="site-wrapper">
       <header class="header">
@@ -2941,208 +2954,88 @@
 </header>
 
 
-      <div class="breadcrumbs">
-        <div class="container">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Главная</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link breadcrumbs__link--active">
-                Портфолио
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <main class="main"><section class="portfolio">
+      <main class="main"><section class="cart">
   <div class="container">
-    <div class="portfolio__top">
-      <h2 class="portfolio__title">Портфолио</h2>
+    <h2 class="cart__title">Корзина</h2>
 
-      <div class="portfolio__top-inner">
-        <ul class="portfolio__top-list">
-          <li class="portfolio__top-item">
-            <button class="portfolio__top-btn" type="button" data-filter="all">
-              Все
-            </button>
-          </li>
-          <li class="portfolio__top-item">
-            <button
-              class="portfolio__top-btn"
-              type="button"
-              data-filter=".category-a"
-            >
-              Парки и сверы
-            </button>
-          </li>
-          <li class="portfolio__top-item">
-            <button
-              class="portfolio__top-btn"
-              type="button"
-              data-filter=".category-b"
-            >
-              Дворы и детские площадки
-            </button>
-          </li>
-          <li class="portfolio__top-item">
-            <button
-              class="portfolio__top-btn"
-              type="button"
-              data-filter=".category-c"
-            >
-              Набережные и пляжи
-            </button>
-          </li>
-          <li class="portfolio__top-item">
-            <button
-              class="portfolio__top-btn"
-              type="button"
-              data-filter=".category-d"
-            >
-              Торговые центры и павильоны
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <div class="cart__wrapper">
+      <ul class="cart__list">
+        <li class="cart__item">
+          <article class="card-product">
+            <div class="card-product__col">
+              <span class="card-product__name">Фото</span>
+              <div class="card-product__img">
+                <img
+                  src="images/content/benches/1.png"
+                  alt="Скамья парковая (со спинкой)"
+                />
+              </div>
+            </div>
+            <div class="card-product__col card-product__col--list">
+              <span class="card-product__name">Название товара</span>
 
-    <div class="portfolio__content">
-      <ul class="portfolio__list">
-        <li class="portfolio__item mix category-d">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/1.jpg" alt="Портфолио" />
+              <h3 class="card-product__title">Скамья парковая (со спинкой)</h3>
+              <ul class="card-product__list">
+                <li class="card-product__item">
+                  <div class="card-product__left">Артикул</div>
+                  <div class="card-product__right">123456</div>
+                </li>
+                <li class="card-product__item">
+                  <div class="card-product__left">Длина</div>
+                  <div class="card-product__right">200 мм</div>
+                </li>
+                <li class="card-product__item">
+                  <div class="card-product__left">Ширина</div>
+                  <div class="card-product__right">50 мм</div>
+                </li>
+                <li class="card-product__item">
+                  <div class="card-product__left">Высота сидения</div>
+                  <div class="card-product__right">65 мм</div>
+                </li>
+                <li class="card-product__item">
+                  <div class="card-product__left">Вес</div>
+                  <div class="card-product__right">300 кг</div>
+                </li>
+              </ul>
             </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-a">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/2.jpg" alt="Портфолио" />
+            <div class="card-product__col">
+              <span class="card-product__name card-product__name--center"
+                >Количество</span
+              >
+              <div class="card-product__box">
+                <div class="card-product__count">1 шт.</div>
+              </div>
             </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-c">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/3.jpg" alt="Портфолио" />
+            <div class="card-product__col">
+              <span class="card-product__name card-product__name--center"
+                >Цена</span
+              >
+              <div class="card-product__box">
+                <div class="card-product__count">11 500 ₽</div>
+              </div>
             </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-b">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/4.jpg" alt="Портфолио" />
+            <div class="card-product__col">
+              <span class="card-product__name card-product__name--color-white"
+                >Удалить</span
+              >
+              <div class="card-product__box">
+                <button class="card-product__delete" type="button">
+                  удалить
+                </button>
+              </div>
             </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-a">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/5.jpg" alt="Портфолио" />
+
+            <div class="card-product__bottom">
+              <div class="card-product__total">
+                Итого к оплате:<span>11 500 ₽</span>
+              </div>
             </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-c">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/6.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-c category-a">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/1.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-d category-b">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/2.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-a category-c">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/3.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-b category-d">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/4.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-b">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/5.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-d">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/6.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
+          </article>
         </li>
       </ul>
 
-      <div class="catalog__pagination pagination">
-        <ul class="pagination__list">
-          <li class="pagination__item">
-            <a class="pagination__link pagination__link--active" href="#">1</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">2</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">3</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">4</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">5</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link pagination__link--further" href="#"
-              >Далеее</a
-            >
-          </li>
-        </ul>
+      <div class="cart__bottom">
+        <a class="cart__btn btn btn--no-shadow" href="#">ОФОРМИТЬ ЗАКАЗ</a>
       </div>
     </div>
   </div>
@@ -3381,11 +3274,3 @@
 
   </body>
 </html>
-
-<!-- <label class="checkbox">
-  <input class="checkbox__input" type="checkbox" required />
-  <span class="checkbox__box"></span>
-  <span class="checkbox__text">
-    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
-  </span> 
-</label> -->

@@ -1,0 +1,126 @@
+.checkout {
+  @include adaptive-value('padding-top', 40, 30, 1);
+  @include adaptive-value('padding-bottom', 90, 50, 1);
+
+  &__title {
+    @include fz40();
+    font-weight: 600;
+    @include adaptive-value('margin-bottom', 50, 30, 1);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: minmax(auto, 600px) minmax(auto, 510px);
+    gap: 30px;
+    justify-content: space-between;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+  }
+}
+
+.form-checkout {
+  max-width: 600px;
+  width: 100%;
+
+  @include breakpointsMaxW($bp-991) {
+    order: 1;
+  }
+
+  &__top,
+  &__delivery,
+  &__payment {
+    @include adaptive-value('margin-bottom', 45, 30, 1);
+  }
+
+  &__heading {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #191919;
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 25px;
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__group {
+    width: 100%;
+
+    &--house {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .choices {
+      height: 48px;
+    }
+  }
+
+  &__label {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    color: #191919;
+  }
+
+  &__input {
+    background-color: var(--color-white);
+    border: 1px solid #dae0e6;
+    border-radius: 5px;
+    padding: 5px;
+    height: 48px;
+    width: 100%;
+    display: block;
+  }
+
+  &__delivery-inner {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+    justify-content: flex-start;
+
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .checkbox {
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #9c9c9c;
+    margin-bottom: 30px;
+
+    a {
+      color: var(--color-accent);
+    }
+  }
+
+  &__btn {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

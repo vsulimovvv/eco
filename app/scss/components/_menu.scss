@@ -206,11 +206,15 @@
     transition: 450ms ease;
     transition-delay: 150ms;
 
+    &--sub {
+      right: -245px;
+    }
+
     &--bottom {
       top: initial;
       bottom: 0;
     }
-
+ 
     &:hover {
       opacity: 1;
       visibility: visible;

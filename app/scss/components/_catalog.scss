@@ -110,7 +110,7 @@
       align-items: center;
       gap: 10px;
       @include breakpointsMaxW($bp-576) {
-       gap: 7px
+        gap: 7px;
       }
     }
 
@@ -218,11 +218,12 @@
   &__reset {
     font-size: 16px;
     line-height: 1;
-    color: #cdcdcd;
-    background-color: #f3f3f3;
+    color: var(--color-accent);
+    background-color: #eefbe2;
     border-radius: 5px;
     width: 101px;
     transition: 200ms ease;
+
     @include breakpointsMaxW($bp-576) {
       height: 40px;
     }

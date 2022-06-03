@@ -1,6 +1,6 @@
 .blog {
   padding-top: 25px;
-  @include adaptive-value('padding-bottom', 75, 40, 1);
+  @include adaptive-value('padding-bottom', 90, 50, 1);
 
   &__title {
     @include fz40();
@@ -47,7 +47,7 @@
     align-items: center;
     gap: 10px;
 
-    &__name{
+    &__name {
       font-weight: 700;
     }
 
@@ -62,7 +62,8 @@
       }
     }
 
-    &__btn {color: #6a6a6a;
+    &__btn {
+      color: #6a6a6a;
       &--active {
         color: var(--color-accent);
         text-decoration: underline;
@@ -96,11 +97,20 @@
   }
 
   &--section {
+    @include adaptive-value('padding-top', 75, 40, 1);
+
     .blog {
       &__title {
         text-align: center;
         margin: 0 auto;
-        @include adaptive-value('margin-bottom', 40, 30, 1);
+      }
+      &__list {
+        margin-bottom: 30px;
+      }
+      &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       &__item {

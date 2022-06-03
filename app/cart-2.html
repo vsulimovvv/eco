@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="css/style.min.css" />
 
 
-    <title>Title</title>
+    <title>Экосреда</title>
   </head>
 
   <body>
@@ -385,6 +385,24 @@
 
 
     <h1 class="visually-hidden">Главная</h1>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Корзина</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active"
+              >Оформление заказа</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <div class="site-wrapper">
       <header class="header">
@@ -2941,208 +2959,152 @@
 </header>
 
 
-      <div class="breadcrumbs">
-        <div class="container">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Главная</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link breadcrumbs__link--active">
-                Портфолио
-              </a>
+      <main class="main"><section class="checkout">
+  <div class="container">
+    <h2 class="checkout__title">Оформление заказа</h2>
+
+    <div class="checkout__wrapper">
+      <form class="form-checkout">
+        <div class="form-checkout__top">
+          <div class="form-checkout__group">
+            <label class="form-checkout__label" for="">Имя</label>
+            <input class="form-checkout__input" type="text" />
+          </div>
+          <div class="form-checkout__group">
+            <label class="form-checkout__label" for="">Фамилия</label>
+            <input class="form-checkout__input" type="text" />
+          </div>
+          <div class="form-checkout__group">
+            <label class="form-checkout__label" for="">Срана</label>
+            <select class="select">
+              <option value="1">Россия</option>
+              <option value="2">Россия</option>
+              <option value="3">Россия</option>
+            </select>
+          </div>
+          <div class="form-checkout__group">
+            <label class="form-checkout__label" for="">Город</label>
+            <input class="form-checkout__input" type="text" />
+          </div>
+          <div class="form-checkout__group">
+            <label class="form-checkout__label" for="">Улица</label>
+            <input class="form-checkout__input" type="text" />
+          </div>
+          <div class="form-checkout__group form-checkout__group--house">
+            <div class="form-checkout__group-box">
+              <label class="form-checkout__label" for="">Дом</label>
+              <input class="form-checkout__input" type="text" />
+            </div>
+            <div class="form-checkout__group-box">
+              <label class="form-checkout__label" for="">Квартира</label>
+              <input class="form-checkout__input" type="text" />
+            </div>
+            <div class="form-checkout__group-box">
+              <label class="form-checkout__label" for="">Офис</label>
+              <input class="form-checkout__input" type="text" />
+            </div>
+          </div>
+          <div class="form-checkout__group">
+            <label class="form-checkout__label" for=""
+              >Контактный телефон</label
+            >
+            <input
+              class="form-checkout__input"
+              type="tel"
+              placeholder="+7 (___) ___ - __ - __"
+            />
+          </div>
+          <div class="form-checkout__group">
+            <label class="form-checkout__label" for="">Контактный e-mail</label>
+            <input class="form-checkout__input" type="text" />
+          </div>
+        </div>
+
+        <div class="form-checkout__delivery">
+          <span class="form-checkout__heading">Доставка</span>
+          <div class="form-checkout__delivery-inner">
+            <label class="checkbox checkbox--dark">
+              <input
+                class="checkbox__input"
+                name="dalivery"
+                type="radio"
+                checked
+              />
+              <span class="checkbox__box"></span>
+              <span class="checkbox__text">Почта России</span>
+            </label>
+            <label class="checkbox checkbox--dark">
+              <input class="checkbox__input" name="dalivery" type="radio" />
+              <span class="checkbox__box"></span>
+              <span class="checkbox__text">Самовывоз</span>
+            </label>
+            <label class="checkbox checkbox--dark">
+              <input class="checkbox__input" name="dalivery" type="radio" />
+              <span class="checkbox__box"></span>
+              <span class="checkbox__text">СДЭК</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-checkout__payment">
+          <span class="form-checkout__heading">Оплата</span>
+          <div class="form-checkout__payment-inner">
+            <label class="checkbox checkbox--dark">
+              <input class="checkbox__input" type="checkbox" checked />
+              <span class="checkbox__box"></span>
+              <span class="checkbox__text">При получении</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-checkout__bottom">
+          <p class="form-checkout__text">
+            Ваши личные данные будут использоваться для обработки ваших заказов,
+            упрощения вашей работы с сайтом и для других целей, описанных в
+            нашей <a href="#">политика конфиденциальности.</a>
+          </p>
+
+          <button class="form-checkout__btn btn btn--no-shadow" type="submit">
+            ПОДТВЕРДИТЬ ЗАКАЗ
+          </button>
+        </div>
+      </form>
+
+      <div class="checkout__order">
+        <div class="order-box">
+          <div class="order-box__head">
+            <span class="order-box__heading">Ваш заказ</span>
+
+            <div class="order-box__cell">
+              <span class="order-box__name">Количество</span>
+            </div>
+            <div class="order-box__cell">
+              <span class="order-box__name">Цена</span>
+            </div>
+          </div>
+
+          <ul class="order-box__list">
+            <li class="order-box__item">
+              <div class="order-box__cell order-box__cell--tar">Скамья парковая (со спинкой)</div>
+              <div class="order-box__cell">1 шт.</div>
+              <div class="order-box__cell">11 500 ₽</div>
             </li>
           </ul>
+
+          <div class="order-box__delivery">
+            <div class="order-box__delivery-left">Доставка: Почтой России</div>
+            <div class="order-box__delivery-right">
+              <div class="order-box__cell">+ 300 ₽</div>
+            </div>
+          </div>
+          <div class="order-box__payment">
+            <div>Оплата: При получении</div>
+          </div>
+
+          <div class="order-box__bottom">
+            <div class="">Итого к оплате</div>
+            <div class="">11 800 ₽</div>
+          </div>
         </div>
-      </div>
-
-      <main class="main"><section class="portfolio">
-  <div class="container">
-    <div class="portfolio__top">
-      <h2 class="portfolio__title">Портфолио</h2>
-
-      <div class="portfolio__top-inner">
-        <ul class="portfolio__top-list">
-          <li class="portfolio__top-item">
-            <button class="portfolio__top-btn" type="button" data-filter="all">
-              Все
-            </button>
-          </li>
-          <li class="portfolio__top-item">
-            <button
-              class="portfolio__top-btn"
-              type="button"
-              data-filter=".category-a"
-            >
-              Парки и сверы
-            </button>
-          </li>
-          <li class="portfolio__top-item">
-            <button
-              class="portfolio__top-btn"
-              type="button"
-              data-filter=".category-b"
-            >
-              Дворы и детские площадки
-            </button>
-          </li>
-          <li class="portfolio__top-item">
-            <button
-              class="portfolio__top-btn"
-              type="button"
-              data-filter=".category-c"
-            >
-              Набережные и пляжи
-            </button>
-          </li>
-          <li class="portfolio__top-item">
-            <button
-              class="portfolio__top-btn"
-              type="button"
-              data-filter=".category-d"
-            >
-              Торговые центры и павильоны
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="portfolio__content">
-      <ul class="portfolio__list">
-        <li class="portfolio__item mix category-d">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/1.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-a">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/2.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-c">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/3.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-b">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/4.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-a">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/5.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-c">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/6.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-c category-a">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/1.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-d category-b">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/2.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-a category-c">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/3.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-b category-d">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/4.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-b">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/5.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-        <li class="portfolio__item mix category-d">
-          <div class="portfolio-card">
-            <a class="portfolio-card__link" href="#"></a>
-            <div class="portfolio-card__top">
-              <img src="images/content/portfolio/6.jpg" alt="Портфолио" />
-            </div>
-            <h3 class="portfolio-card__title">Название работы</h3>
-          </div>
-        </li>
-      </ul>
-
-      <div class="catalog__pagination pagination">
-        <ul class="pagination__list">
-          <li class="pagination__item">
-            <a class="pagination__link pagination__link--active" href="#">1</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">2</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">3</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">4</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">5</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link pagination__link--further" href="#"
-              >Далеее</a
-            >
-          </li>
-        </ul>
       </div>
     </div>
   </div>
@@ -3381,11 +3343,3 @@
 
   </body>
 </html>
-
-<!-- <label class="checkbox">
-  <input class="checkbox__input" type="checkbox" required />
-  <span class="checkbox__box"></span>
-  <span class="checkbox__text">
-    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
-  </span> 
-</label> -->

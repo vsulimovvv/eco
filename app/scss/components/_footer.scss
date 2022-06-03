@@ -26,9 +26,9 @@
     }
   }
 
-&--no-border-top{
-  border-top: none;
-}
+  &--no-border-top {
+    border-top: none;
+  }
 
   &__call-box {
     display: flex;
@@ -290,6 +290,9 @@
     color: #6a6a6a;
     padding: 15px 0;
     border-bottom: 1px solid #d9d9d9;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
 
     @include breakpointsMaxW($bp-576) {
       font-size: 11px;

@@ -2,8 +2,22 @@
   background-color: var(--color-accent);
   @include adaptive-value('padding-top', 90, 50, 1);
   @include adaptive-value('padding-bottom', 90, 50, 1);
-  color: var(--color-white);
   @include background(cover);
+
+  .iti {
+    &__country-list {
+      background-color: var(--color-white);
+    }
+    &__county-name {
+      color: var(--color-black) !important;
+    }
+    &__dial-code {
+      color: var(--color-black) !important;
+    }
+    &__flag-container{
+      padding-bottom: 20px;
+    }
+  }
 
   &__top {
     text-align: center;
@@ -13,6 +27,7 @@
   &__title {
     @include fz40();
     margin-bottom: 15px;
+    color: var(--color-white);
   }
 
   &__text {

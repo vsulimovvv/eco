@@ -2,6 +2,16 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ===== Mask input
   $('input[type="tel"]').mask('+7 (999) 999-99-99');
 
+  // var input = document.querySelectorAll('input[type="tel"]');
+  // input.forEach((el) => {
+  //   window.intlTelInput(el, {
+  //     initialCountry: 'RU',
+
+  //   });
+  // });
+
+  // console.log(document.querySelector('input[type="tel"]'));
+
   // * ==== Counter
   (function counter() {
     const counterEl = document.querySelectorAll('.counter');
@@ -45,6 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
   (function slider() {
     const sliderEl = document.querySelector('.hero__slider');
     new Swiper(sliderEl, {
+      loop: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -60,11 +71,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const showMoreBtn = document.querySelector('.show-more-btn');
     if (showMoreBtn) {
       let currentItem = 4;
-      console.log(showMoreBtn);
 
       const boxes = [...document.querySelectorAll('.categories__item')];
-
-      console.log(boxes);
 
       const boxesRemove = boxes.slice(8);
 
@@ -77,6 +85,34 @@ window.addEventListener('DOMContentLoaded', () => {
           boxesRemove[i].style.display = 'block';
         }
         currentItem += 4;
+
+        if (currentItem >= boxesRemove.length) {
+          showMoreBtn.style.display = 'none';
+        }
+      });
+    }
+  })();
+
+  (function showMore2() {
+    const showMoreBtn = document.querySelector('.blog__btn');
+    if (showMoreBtn) {
+      let currentItem = 3;
+
+      const boxes = [
+        ...document.querySelectorAll('.blog--section .blog__item'),
+      ];
+
+      const boxesRemove = boxes.slice(3);
+
+      boxesRemove.forEach((el) => {
+        el.style.display = 'none';
+      });
+
+      showMoreBtn.addEventListener('click', (e) => {
+        for (let i = currentItem; i < currentItem + 4; i++) {
+          boxesRemove[i].style.display = 'block';
+        }
+        currentItem += 3;
 
         if (currentItem >= boxesRemove.length) {
           showMoreBtn.style.display = 'none';
@@ -160,6 +196,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const sliderEl = document.querySelectorAll('.our-works__slider');
     sliderEl.forEach((el) => {
       new Swiper(el, {
+        loop: true,
         pagination: {
           el: '.swiper-pagination',
           type: 'progressbar',
@@ -213,6 +250,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const sliderEl = document.querySelectorAll('.news-product__slider');
     sliderEl.forEach((el) => {
       new Swiper(el, {
+        loop: true,
         pagination: {
           el: '.swiper-pagination',
           type: 'progressbar',
@@ -232,6 +270,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const sliderEl = document.querySelectorAll('.reviews__slider');
     sliderEl.forEach((el) => {
       new Swiper(el, {
+        loop: true,
         pagination: {
           el: '.swiper-pagination',
           type: 'progressbar',

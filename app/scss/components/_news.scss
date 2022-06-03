@@ -235,6 +235,16 @@
     max-width: 230px;
 
     @include adaptive-value('font-size', 19, 14, 1);
+
+    a {
+      transition: 200ms ease;
+    }
+
+    &:hover {
+      a {
+        color: var(--color-accent);
+      }
+    }
   }
 
   &__text {
