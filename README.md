@@ -11,3 +11,5 @@
 Описание услуги: https://vsulimovvv.github.io/eco/app/descr-service.html  
 Блог: https://vsulimovvv.github.io/eco/app/blog.html  
 О компании: https://vsulimovvv.github.io/eco/app/about.html  
+Корзина (шаг 1): https://vsulimovvv.github.io/eco/app/cart.html  
+Корзина (шаг 2): https://vsulimovvv.github.io/eco/app/cart-2.html  
