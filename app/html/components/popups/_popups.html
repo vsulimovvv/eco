@@ -121,6 +121,68 @@
   </div>
 </div>
 
+<div class="popup popup--message">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Отправьте сообщение</h2>
+      <div class="popup__text">
+        <p>Заполните данные и мы свяжемся с Вами в ближайшее время</p>
+      </div>
+
+      <form class="form-delivery">
+        <label class="form-delivery__group">
+          <input
+            class="form-delivery__input"
+            type="text"
+            placeholder="Имя"
+            required
+          />
+        </label>
+        <label class="form-delivery__group">
+          <input
+            class="form-delivery__input"
+            type="tel"
+            placeholder="+7 (999) 999 - 99 - 99"
+            required
+          />
+        </label>
+        <label class="form-delivery__group">
+          <input
+            class="form-delivery__input"
+            type="text"
+            placeholder="E-mail"
+          />
+        </label>
+        <label class="form-delivery__group">
+          <textarea
+            class="form-delivery__input form-delivery__input--textarea"
+            placeholder="Сообщение"
+          ></textarea>
+        </label>
+
+        <label class="checkbox checkbox--dark">
+          <input class="checkbox__input" type="checkbox" checked />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Нажимая на кнопку отправить я соглашаюсь с
+            <a href="#"> политикой конфиденциальности</a>
+          </span>
+        </label>
+
+        <button class="form-delivery__btn btn btn--no-shadow" type="button">
+          Отправить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
 <div class="popup popup--passport">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
