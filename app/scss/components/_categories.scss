@@ -171,6 +171,7 @@
     transition: 200ms ease;
     position: relative;
     padding: 30px;
+    height: 250px;
 
     @include adaptive-value('padding', 30, 9, 1);
   }
