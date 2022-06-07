@@ -115,7 +115,6 @@
     right: 0;
     height: 98%;
     width: 30%;
-
     background-image: url('../images/content/tagline-bg.jpg');
     @include background(cover);
 
@@ -152,6 +151,11 @@
 
     &-offer {
       max-width: 250px;
+      margin-bottom: 65px;
+
+      @include breakpointsMaxW($bp-768) {
+        margin-bottom: 0;
+      }
     }
 
     &-title {
