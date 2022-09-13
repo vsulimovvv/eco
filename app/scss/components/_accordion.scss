@@ -1,21 +1,40 @@
 .accordion {
   padding-left: 1px;
 
+  &--link {
+    .accordion__control {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
   &.active {
     .accordion__control {
       &::after {
         transform: translateY(-50%) rotate(180deg);
       }
     }
-    
+
     .accordion__content {
       overflow: initial;
     }
   }
 
+  &__name {
+    width: 100%;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
   &__control {
     transition: 150ms ease;
     position: relative;
+    width: 40px;
+    height: 30px;
+    z-index: 2;
 
     &::after {
       @include elDef();

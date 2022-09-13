@@ -738,9 +738,11 @@ input[type='file'] {
       }
     }
   }
+
   &__socials {
     margin-bottom: 30px;
   }
+
   .dropmenu {
     transform: translateX(-10px);
     opacity: 0;
@@ -794,6 +796,7 @@ input[type='file'] {
     }
   }
 }
+
 .footer-tools {
   display: none;
 
@@ -946,7 +949,7 @@ input[type='file'] {
   box-shadow: 0px 27px 40px 0px rgba(55, 55, 55, 0.15);
   border-radius: 5px;
   padding: 30px;
-  
+
   @include breakpointsMaxW($bp-991) {
     box-shadow: none;
     padding: 0;

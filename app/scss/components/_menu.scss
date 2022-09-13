@@ -136,10 +136,22 @@
     transition: 450ms ease;
     transition-delay: 150ms;
 
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+
+    .simplebar-scrollbar::before {
+      background-color: var(--color-accent);
+    }
+
     &:hover {
       opacity: 1;
       visibility: visible;
       transform: translateY(0);
+    }
+
+    &__list {
+      // overflow-y: auto;
+      // overflow-x: hidden;
     }
 
     &__item {
@@ -214,7 +226,7 @@
       top: initial;
       bottom: 0;
     }
- 
+
     &:hover {
       opacity: 1;
       visibility: visible;

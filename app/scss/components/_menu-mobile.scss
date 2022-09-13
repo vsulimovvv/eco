@@ -17,7 +17,7 @@
   opacity: 0;
   visibility: hidden;
   transition: 350ms ease-in-out;
-  overflow-x: auto;
+  overflow-y: auto;
 
   @include adaptive-value('padding', 40, 20, 1);
 
