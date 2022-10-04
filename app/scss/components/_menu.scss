@@ -48,6 +48,10 @@
     color: #3e4244;
     transition: 200ms ease;
 
+    @include breakpointsMaxW($bp-container) {
+      font-size: 14px;
+    }
+
     &:hover {
       color: var(--color-accent);
     }
@@ -137,7 +141,6 @@
     transition-delay: 150ms;
 
     max-height: calc(100vh - 300px);
-    overflow-y: auto;
 
     .simplebar-scrollbar::before {
       background-color: var(--color-accent);
@@ -149,14 +152,10 @@
       transform: translateY(0);
     }
 
-    &__list {
-      // overflow-y: auto;
-      // overflow-x: hidden;
-    }
-
     &__item {
       border-bottom: 1px solid #ebebeb;
       position: relative;
+
       &:last-child {
         border-bottom: none;
       }

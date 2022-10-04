@@ -2,15 +2,16 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ===== Mask input
   $('input[type="tel"]').mask('+7 (999) 999-99-99');
 
-  // var input = document.querySelectorAll('input[type="tel"]');
-  // input.forEach((el) => {
-  //   window.intlTelInput(el, {
-  //     initialCountry: 'RU',
-
-  //   });
-  // });
-
-  // console.log(document.querySelector('input[type="tel"]'));
+  //* Show scroll top
+  function scrollTop() {
+    const scrollTopEl = document.querySelector('.scroll');
+    if (this.scrollY >= 660) {
+      scrollTopEl.classList.add('show-scroll');
+    } else {
+      scrollTopEl.classList.remove('show-scroll');
+    }
+  }
+  window.addEventListener('scroll', scrollTop);
 
   // * ==== Counter
   (function counter() {

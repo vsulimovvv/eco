@@ -1027,3 +1027,38 @@ input[type='file'] {
     }
   }
 }
+
+.scroll {
+  position: fixed;
+  right: 16px;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 8px;
+  border-radius: 8px;
+  transition: 400ms;
+  background-color: var(--color-accent);
+  z-index: 100;
+  opacity: 0.6;
+  visibility: hidden;
+
+  svg {
+    transform: rotate(-90deg);
+    width: 30px;
+    height: 30px;
+
+    path {
+      fill: var(--color-white);
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.show-scroll {
+    visibility: visible;
+    bottom: 25px;
+  }
+}

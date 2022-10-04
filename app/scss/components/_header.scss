@@ -1,12 +1,12 @@
 .header {
   transition: 200ms ease;
   position: fixed;
-
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
   background-color: var(--color-white);
+
   &.scroll-header {
     position: fixed;
     top: 0;
@@ -224,6 +224,8 @@
   }
 
   &__cart {
+    position: relative;
+
     &::after {
       @include maskImage(url('../images/icons/cart.svg'), contain);
     }
@@ -324,4 +326,22 @@
       align-items: flex-end;
     }
   }
+}
+
+.cart-count {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  top: -10px;
+  right: -10px;
+  position: absolute;
+  color: var(--color-white);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding-top: 3px;
 }
