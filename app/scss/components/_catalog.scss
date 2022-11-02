@@ -7,6 +7,11 @@
     @include adaptive-value('margin-bottom', 30, 20, 1);
   }
 
+  &__right{
+    // Для Свайпера
+    min-width: 0;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: 0.325fr 1fr;

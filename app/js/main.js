@@ -288,6 +288,22 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
+  // * ===== Slider
+  (function sliderWorks() {
+    const sliderEl = document.querySelectorAll('.tags-slider');
+    sliderEl.forEach((el) => {
+      new Swiper(el, {
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        navigation: {
+          nextEl: document.querySelector('.tags-slider .swiper-button-next'),
+          prevEl: document.querySelector('.tags-slider .swiper-button-prev'),
+        },
+      });
+    });
+  })();
+
   // * ===== Custom select
   (function customSelect() {
     const selects = document.querySelectorAll('.select');

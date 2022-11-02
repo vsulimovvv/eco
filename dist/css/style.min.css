@@ -529,8 +529,34 @@ input[type='file'] {
   -o-transition: 150ms ease;
   transition: 150ms ease;
 }
-.tags__wrap {
-  min-width: 0;
+.tags {
+  width: 100%;
+}
+.tags .swiper-button-next::after,
+.tags .swiper-button-prev::after {
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+}
+.tags .swiper-button-next,
+.tags .swiper-button-prev {
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+}
+.tags .swiper-button-next:hover,
+.tags .swiper-button-prev:hover {
+  background-color: var(--color-accent);
+}
+.tags .swiper-button-next:hover::after,
+.tags .swiper-button-prev:hover::after {
+  background-color: var(--color-white);
+}
+.tags .swiper-button-next {
+  right: 0;
+}
+.tags .swiper-button-prev {
+  left: 0;
 }
 .tags__list {
   display: -webkit-box;
@@ -540,7 +566,6 @@ input[type='file'] {
   -ms-flex-align: center;
   align-items: center;
   gap: 5px;
-  min-width: 0;
   width: 100%;
 }
 .tags__item {
@@ -570,8 +595,10 @@ input[type='file'] {
   content: '';
   width: 17px;
   height: 17px;
-  -webkit-mask: urL('../images/content/check.png') no-repeat center/contain;
-  mask: urL('../images/content/check.png') no-repeat center/contain;
+  background-image: urL('../images/content/check.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   left: 0;
   top: 45%;
   -webkit-transform: translateY(-50%);
@@ -9630,6 +9657,9 @@ input[type='file'] {
   .catalog__title {
     margin-bottom: calc(20px + 10 * ((100vw - 375px) / 895));
   }
+}
+.catalog__right {
+  min-width: 0;
 }
 .catalog__wrapper {
   display: -ms-grid;
