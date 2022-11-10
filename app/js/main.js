@@ -289,16 +289,16 @@ window.addEventListener('DOMContentLoaded', () => {
   })();
 
   // * ===== Slider
-  (function sliderWorks() {
+  (function sliderTags() {
     const sliderEl = document.querySelectorAll('.tags-slider');
     sliderEl.forEach((el) => {
       new Swiper(el, {
-        loop: true,
         slidesPerView: 'auto',
         spaceBetween: 10,
+        freeMode: true,
         navigation: {
-          nextEl: document.querySelector('.tags-slider .swiper-button-next'),
-          prevEl: document.querySelector('.tags-slider .swiper-button-prev'),
+          nextEl: document.querySelector('.tags .swiper-button-next'),
+          prevEl: document.querySelector('.tags .swiper-button-prev'),
         },
       });
     });
