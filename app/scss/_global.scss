@@ -1023,15 +1023,19 @@ input[type='file'] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   min-width: 0;
+  box-sizing: border-box;
   overflow: hidden;
 
   .tags-wrap {
-    margin-right: 20px;
+    // margin-right: 20px;
     display: flex;
     align-items: center;
     min-width: 0;
+    box-sizing: border-box;
+
+    width: calc(100% + 50px);
 
     @include breakpointsMaxW($bp-768) {
       margin-right: 10px;
@@ -1040,17 +1044,20 @@ input[type='file'] {
 
   .tags-slider {
     min-width: 0;
+    box-sizing: border-box;
+    // overflow: initial;
   }
 
   &__list {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    // display: flex;
+    // align-items: center;
+    // gap: 5px;
   }
 
   &__item {
     width: auto;
     box-sizing: border-box;
+    flex-shrink: 0;
   }
 
   &__btn {

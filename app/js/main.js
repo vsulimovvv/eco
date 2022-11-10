@@ -293,9 +293,15 @@ window.addEventListener('DOMContentLoaded', () => {
     const sliderEl = document.querySelectorAll('.tags-slider');
     sliderEl.forEach((el) => {
       new Swiper(el, {
+        effect: 'slide',
         slidesPerView: 'auto',
+        // loop: true,
+        observer: true,
+        observeParents: true,
+        // slidesPerView: 4,
         spaceBetween: 10,
-        freeMode: true,
+        // freeMode: true,
+        // centeredSlides: true,
         navigation: {
           nextEl: document.querySelector('.tags .swiper-button-next'),
           prevEl: document.querySelector('.tags .swiper-button-prev'),
