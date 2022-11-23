@@ -2707,6 +2707,20 @@ input[type='file'] {
   transition: 300ms ease;
   height: 100%;
 }
+@media (max-width: 991.98px) {
+  .bench-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
 .bench-card:hover {
   -webkit-box-shadow: 0px 12px 32px 0px rgba(6, 6, 6, 0.23);
   box-shadow: 0px 12px 32px 0px rgba(6, 6, 6, 0.23);
@@ -2779,10 +2793,28 @@ input[type='file'] {
   position: relative;
   padding: 20px;
   padding: 20px;
+  border: 1px solid red;
 }
 @media (max-width: 1270px) {
   .bench-card__body {
     padding: calc(10px + 10 * ((100vw - 375px) / 895));
+  }
+}
+@media (max-width: 991.98px) {
+  .bench-card__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
   }
 }
 .bench-card__info {
@@ -2804,6 +2836,19 @@ input[type='file'] {
 @media (max-width: 991.98px) {
   .bench-card__info {
     border-bottom: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
   }
 }
 .bench-card__title {
@@ -2812,6 +2857,9 @@ input[type='file'] {
   font-weight: 400;
   color: #6e6e6e;
   margin-bottom: 10px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 .bench-card__price {
   font-size: 19px;
